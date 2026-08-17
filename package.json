@@ -2,7 +2,7 @@
   "name": "conqueror-studio-website",
   "version": "0.1.0",
   "private": true,
-  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "next lint", "test": "node --test" },
+  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "eslint . --max-warnings=0", "test": "node --test" },
   "dependencies": { "next": "15.5.0", "react": "19.1.0", "react-dom": "19.1.0" },
-  "devDependencies": { "@types/node": "22.10.0", "@types/react": "19.0.0", "@types/react-dom": "19.0.0", "typescript": "5.7.2" }
+  "devDependencies": { "@types/node": "22.10.0", "@types/react": "19.0.0", "@types/react-dom": "19.0.0", "eslint": "9.39.5", "eslint-config-next": "16.3.1", "typescript": "5.7.2" }
 }

@@ -7,7 +7,7 @@ const read = (path) => readFile(new URL(path, root), 'utf8');
 
 test('homepage contains the required editorial sections', async () => {
   const page = await read('src/app/page.tsx');
-  for (const section of ['hero', 'manifesto', 'work', 'craft', 'updates', 'journal', 'contact']) {
+  for (const section of ['hero', 'manifesto', 'work', 'craft', 'updates', 'journal', 'industries', 'process', 'contact']) {
     assert.match(page, new RegExp('id="' + section + '"'));
   }
 });

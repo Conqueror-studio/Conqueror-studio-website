@@ -66,6 +66,37 @@ export const services = [
   },
 ];
 
+export const industries = [
+  'Hospitality',
+  'Wedding',
+  'Photography',
+  'Creative entrepreneurs',
+  'Personal brands',
+];
+
+export const process = [
+  {
+    number: '01',
+    title: 'Discover',
+    description: 'Understanding your vision, business, and audience.',
+  },
+  {
+    number: '02',
+    title: 'Design',
+    description: 'Crafting strategy and visuals that reflect your brand.',
+  },
+  {
+    number: '03',
+    title: 'Develop',
+    description: 'Building experiences with precision and technology.',
+  },
+  {
+    number: '04',
+    title: 'Deliver',
+    description: 'Launching, optimizing, and supporting your growth.',
+  },
+];
+
 export const updates: StudioUpdate[] = [
   {
     date: '18.08.26',

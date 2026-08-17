@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { journal, projects, services, updates } from '../lib/content';
+import { industries, journal, process, projects, services, updates } from '../lib/content';
 
 const whatsappUrl = 'https://wa.me/6281295919621';
 
@@ -8,13 +8,15 @@ export default function HomePage() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#hero" aria-label="Conqueror Studio home">
+          <span className="brand-mark" aria-hidden="true">✦</span>
           <span>CONQUEROR</span>
           <span>STUDIO</span>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#work">Work</a>
-          <a href="#craft">Craft</a>
-          <a href="#updates">Updates</a>
+          <a href="#craft">Services</a>
+          <a href="#manifesto">About</a>
+          <a href="#process">Process</a>
           <a href="#journal">Journal</a>
         </nav>
         <a className="header-link" href="#contact">
@@ -30,7 +32,7 @@ export default function HomePage() {
             <br />
             <em>digital</em>
             <br />
-            masterpieces.
+            masterpieces<span className="headline-dot">.</span>
           </h1>
           <p className="lede hero-lede">
             Timeless digital experiences and intelligent systems for ambitious modern brands.
@@ -152,8 +154,45 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section id="industries" className="industries section-rule" aria-labelledby="industries-heading">
+        <div className="section-label"><span>06</span><span>Industries</span></div>
+        <div className="section-content industry-content">
+          <div className="section-intro">
+            <h2 id="industries-heading">Brands we<br /><em>create for.</em></h2>
+            <p className="lede">Focused digital direction for people building something worth remembering.</p>
+          </div>
+          <div className="industry-list">
+            {industries.map((industry, index) => (
+              <div className="industry-item" key={industry}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <h3>{industry}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="process" className="process section-rule" aria-labelledby="process-heading">
+        <div className="section-label"><span>07</span><span>Process</span></div>
+        <div className="section-content">
+          <div className="section-intro">
+            <h2 id="process-heading">From blank canvas<br /><em>to launch.</em></h2>
+            <p className="lede">A clear, collaborative path from first conversation to a living digital presence.</p>
+          </div>
+          <div className="process-list">
+            {process.map((step, index) => (
+              <article className="process-item" key={step.number}>
+                <div className="process-top"><span>{step.number}</span>{index < process.length - 1 && <span aria-hidden="true">→</span>}</div>
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="contact" aria-labelledby="contact-heading">
-        <p className="eyebrow">06 / Begin a project</p>
+        <p className="eyebrow">08 / Begin a project</p>
         <h2 id="contact-heading">Your vision deserves<br /><em>a digital masterpiece.</em></h2>
         <p className="lede">Tell us what you are building. We will help you find the clearest next step.</p>
         <a className="button button-light" href={whatsappUrl} target="_blank" rel="noreferrer">
@@ -163,7 +202,7 @@ export default function HomePage() {
 
       <footer className="site-footer">
         <div>
-          <p className="wordmark"><span>CONQUEROR</span><span>STUDIO</span></p>
+          <p className="wordmark"><span className="brand-mark" aria-hidden="true">✦</span><span>CONQUEROR</span><span>STUDIO</span></p>
           <p className="footer-note">Crafted in Indonesia.<br />Inspired by Renaissance.<br />Powered by Technology.</p>
         </div>
         <div className="footer-links">
