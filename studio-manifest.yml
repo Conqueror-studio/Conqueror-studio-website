@@ -1,0 +1,7 @@
+project: conqueror-studio-website
+type: studio-website
+dependencies:
+  csos: '1.1.0'
+  cds: '1.1.0'
+  starter: '1.1.0'
+  assets: '1.1.0'
