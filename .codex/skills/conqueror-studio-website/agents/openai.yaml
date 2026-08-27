@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conqueror Studio Website"
+  short_description: "Build and review the Conqueror Studio editorial website."
+  default_prompt: "You are working on the Conqueror Studio Website. First read `.codex/skills/conqueror-studio-website/SKILL.md`, then `.ai/agent-context.md`, `studio-manifest.yml`, `docs/prd.md`, and `docs/pds.md`. Build or review only changes that preserve the luxury editorial direction, content-truth rules, and required quality gates. Use local fixtures and existing components, do not invent proof or claims, and report the exact files you changed plus the tests you ran."

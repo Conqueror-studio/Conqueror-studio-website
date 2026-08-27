@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Kopi Senja concept study</title>
+  <desc id="desc">An abstract editorial composition in blue, ochre, and ink.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1e264c"/><stop offset=".56" stop-color="#bba487"/><stop offset="1" stop-color="#302521"/></linearGradient>
+    <radialGradient id="glow" cx=".25" cy=".2" r=".75"><stop stop-color="#f6f3ee" stop-opacity=".72"/><stop offset="1" stop-color="#f6f3ee" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="158" cy="174" r="330" fill="url(#glow)"/>
+  <path d="M96 742c134-158 306-239 516-243 49 0 95 4 136 12v308H96Z" fill="#111111" fill-opacity=".58"/>
+  <ellipse cx="440" cy="553" rx="188" ry="70" fill="#f6f3ee" fill-opacity=".84" transform="rotate(-9 440 553)"/>
+  <circle cx="435" cy="548" r="71" fill="#2046f2" fill-opacity=".74"/>
+</svg>

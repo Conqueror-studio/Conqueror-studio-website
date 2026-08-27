@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Blue Hour Table concept study</title>
+  <desc id="desc">An abstract dining-room study in editorial blue and ivory.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#10152e"/><stop offset="1" stop-color="#2046f2"/></linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <path d="M0 708c170-67 350-101 540-101 91 0 178 7 260 21v372H0Z" fill="#111111"/>
+  <ellipse cx="400" cy="714" rx="293" ry="91" fill="#f6f3ee" fill-opacity=".9"/>
+  <path d="M164 710h472l-82 227H246Z" fill="#bba487"/>
+  <circle cx="400" cy="512" r="74" fill="#f6f3ee" fill-opacity=".76"/>
+  <path d="M400 511v-210" stroke="#f6f3ee" stroke-width="8" stroke-opacity=".75"/>
+  <circle cx="400" cy="286" r="25" fill="#f6f3ee"/>
+</svg>

@@ -2,6 +2,10 @@
 
 This repository is the first production-validation project built from Conqueror Studio OS.
 
+## Codex skill
+
+When Codex works in this repository, it should use the `conqueror-studio-website` skill as the primary operating guide. That skill is the project-specific source of truth for implementation and review behavior.
+
 ## Read before editing
 
 1. CSOS constitution, quality gates, integration contract, and agent runbook.

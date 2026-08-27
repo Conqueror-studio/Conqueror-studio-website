@@ -6,11 +6,28 @@ const whatsappUrl = 'https://wa.me/6281295919621';
 export default function HomePage() {
   return (
     <main>
-      <header className="site-header">
+      <div className="hero-shell">
+        <div className="hero-visual">
+          <Image
+            className="hero-art-image"
+            src="/hero-art.jpg"
+            alt="Placeholder Renaissance-inspired painting supplied as Conqueror Studio hero artwork"
+            fill
+            priority
+            sizes="100vw"
+          />
+        </div>
+
+        <header className="site-header">
         <a className="wordmark" href="#hero" aria-label="Conqueror Studio home">
-          <span className="brand-mark" aria-hidden="true">✦</span>
-          <span>CONQUEROR</span>
-          <span>STUDIO</span>
+          <Image
+            className="logo-image"
+            src="/brand/conqueror-logo.svg"
+            alt="Conqueror Studio"
+            width={270}
+            height={72}
+            priority
+          />
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#work">Work</a>
@@ -19,46 +36,39 @@ export default function HomePage() {
           <a href="#process">Process</a>
           <a href="#journal">Journal</a>
         </nav>
-        <a className="header-link" href="#contact">
-          Free consultation <span aria-hidden="true">↗</span>
-        </a>
-      </header>
+        <div className="header-actions">
+          <span className="language">ID / EN</span>
+          <a className="header-link" href="#contact">
+            Free consultation <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        </header>
 
       <section id="hero" className="hero" aria-labelledby="hero-heading">
         <div className="hero-copy">
-          <p className="eyebrow">Digital atelier · Indonesia · 2026</p>
+          <p className="eyebrow">Digital atelier</p>
           <h1 id="hero-heading">
-            We create
+            We Create
             <br />
-            <em>digital</em>
+            <em>Digital</em>
             <br />
-            masterpieces<span className="headline-dot">.</span>
+            Masterpieces<span className="headline-dot">.</span>
           </h1>
           <p className="lede hero-lede">
             Timeless digital experiences and intelligent systems for ambitious modern brands.
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href={whatsappUrl} target="_blank" rel="noreferrer">
-              Begin a conversation <span aria-hidden="true">↗</span>
+              Free consultation <span aria-hidden="true">↗</span>
             </a>
             <a className="text-link" href="#work">
-              Explore the archive <span aria-hidden="true">↓</span>
+              Explore our work <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
-        <div className="hero-visual">
-          <Image
-            src="/hero-placeholder.svg"
-            alt="Abstract Renaissance-inspired study of light and form"
-            fill
-            priority
-            sizes="(max-width: 760px) 100vw, 48vw"
-          />
-          <div className="hero-visual-label">Study 01 · Light / Form</div>
-          <div className="hero-visual-mark" aria-hidden="true">✦</div>
-        </div>
-        <p className="scroll-note">Scroll to explore <span aria-hidden="true">↓</span></p>
+        <p className="hero-index" aria-hidden="true">01 / 07 · 2026</p>
       </section>
+      </div>
 
       <section id="manifesto" className="manifesto section-rule" aria-labelledby="manifesto-heading">
         <div className="section-label"><span>01</span><span>Philosophy</span></div>
@@ -81,7 +91,14 @@ export default function HomePage() {
           <div className="project-list">
             {projects.map((project) => (
               <article className="project-card" key={project.number}>
-                <div className="project-art" style={{ background: project.tone }} aria-label={project.title + ' visual study'} role="img">
+                <div className="project-art">
+                  <Image
+                    className="project-art-image"
+                    src={project.asset}
+                    alt={project.alt}
+                    fill
+                    sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 30vw"
+                  />
                   <span>Concept<br />archive</span>
                   <small>{project.number}</small>
                 </div>
@@ -202,7 +219,9 @@ export default function HomePage() {
 
       <footer className="site-footer">
         <div>
-          <p className="wordmark"><span className="brand-mark" aria-hidden="true">✦</span><span>CONQUEROR</span><span>STUDIO</span></p>
+          <p className="wordmark">
+            <Image className="logo-image" src="/brand/conqueror-logo.svg" alt="Conqueror Studio" width={270} height={72} />
+          </p>
           <p className="footer-note">Crafted in Indonesia.<br />Inspired by Renaissance.<br />Powered by Technology.</p>
         </div>
         <div className="footer-links">

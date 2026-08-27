@@ -4,7 +4,8 @@ export type Project = {
   category: string;
   year: string;
   summary: string;
-  tone: string;
+  asset: string;
+  alt: string;
 };
 
 export type StudioUpdate = {
@@ -28,7 +29,8 @@ export const projects: Project[] = [
     category: 'Hospitality / Concept',
     year: '2026',
     summary: 'A digital direction for a coffee house built around ritual, warmth, and everyday pause.',
-    tone: 'linear-gradient(135deg, #1e264c 0%, #bba487 54%, #302521 100%)',
+    asset: '/assets/projects/kopi-senja.svg',
+    alt: 'Abstract concept study in editorial blue and warm ochre for Kopi Senja.',
   },
   {
     number: '02',
@@ -36,7 +38,8 @@ export const projects: Project[] = [
     category: 'Wedding / Concept',
     year: '2026',
     summary: 'An editorial experience for a wedding studio that lets emotion lead the way.',
-    tone: 'linear-gradient(135deg, #d8cdbb 0%, #8c6d63 52%, #171a2d 100%)',
+    asset: '/assets/projects/eternal-moments.svg',
+    alt: 'Abstract concept study of ivory forms and blue shadow for Eternal Moments.',
   },
   {
     number: '03',
@@ -44,7 +47,17 @@ export const projects: Project[] = [
     category: 'Photography / Concept',
     year: '2026',
     summary: 'A visual-first portfolio study for creative work that deserves room to breathe.',
-    tone: 'linear-gradient(135deg, #161616 0%, #53648a 56%, #d7c1a1 100%)',
+    asset: '/assets/projects/aruna-studio.svg',
+    alt: 'Abstract concept study of ink black, blue, and ivory planes for Aruna Studio.',
+  },
+  {
+    number: '04',
+    title: 'Blue Hour Table',
+    category: 'Hospitality / Concept',
+    year: '2026',
+    summary: 'A concept study for an evening dining room shaped by quiet ritual and generous space.',
+    asset: '/assets/projects/blue-hour-table.svg',
+    alt: 'Abstract concept study of a blue hour dining table with ivory light.',
   },
 ];
 

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Eternal Moments concept study</title>
+  <desc id="desc">An abstract ivory and blue editorial composition.</desc>
+  <rect width="800" height="1000" fill="#d8cdbb"/>
+  <path d="M0 0h800v450c-118 92-242 138-372 138C276 588 132 531 0 418Z" fill="#2046f2"/>
+  <path d="M0 1000V562c128 80 263 119 401 119 142 0 275-39 399-118v437Z" fill="#111111" fill-opacity=".9"/>
+  <path d="M128 214c120-118 300-128 451-29 32 21 60 46 86 75-72 103-165 155-279 155-111 0-197-53-258-159Z" fill="#f6f3ee" fill-opacity=".82"/>
+  <circle cx="493" cy="369" r="78" fill="#b38f7c" fill-opacity=".85"/>
+</svg>

@@ -16,24 +16,31 @@ body { margin: 0; background: var(--ivory); background-image: radial-gradient(rg
 a { color: inherit; text-decoration: none; }
 a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
 
-.site-header { align-items: center; display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; padding: 1.75rem 5vw; }
+.hero-shell { min-height: 100svh; overflow: hidden; position: relative; }
+.site-header { align-items: center; display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; padding: 1.35rem 5vw; position: relative; z-index: 3; }
 .wordmark { display: inline-flex; flex-direction: column; font: 600 0.78rem/1 var(--sans); letter-spacing: 0.16em; width: max-content; }
 .wordmark span:last-child { letter-spacing: 0.34em; }
+.logo-image { display: block; height: auto; width: 9.8rem; }
 .brand-mark { align-items: center; background: var(--ink); color: var(--ivory); display: inline-flex; font-size: 0.95rem; height: 1.35rem; justify-content: center; letter-spacing: 0; margin-bottom: 0.3rem; width: 1.35rem; }
-.desktop-nav { display: flex; gap: 2rem; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; }
-.desktop-nav a, .header-link, .text-link, .card-link, .footer-links a { transition: color 180ms ease, opacity 180ms ease; }
+.desktop-nav { display: flex; gap: 1.75rem; font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; }
+.desktop-nav a, .header-link, .text-link, .card-link, .footer-links a { transition: background 180ms ease, color 180ms ease, opacity 180ms ease; }
 .desktop-nav a:hover, .header-link:hover, .text-link:hover, .card-link:hover, .footer-links a:hover { color: var(--blue); }
-.header-link { justify-self: end; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.header-actions { align-items: center; display: flex; gap: 1.5rem; justify-self: end; }
+.language { font-size: 0.56rem; letter-spacing: 0.14em; }
+.header-link { border: 1px solid var(--line); font-size: 0.58rem; letter-spacing: 0.1em; padding: 0.68rem 0.82rem; text-transform: uppercase; }
+.header-link:hover { background: var(--ink); color: var(--ivory); }
 
-.hero { align-items: center; display: grid; gap: 7vw; grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr); min-height: calc(100vh - 86px); padding: 4rem 8vw 6rem; position: relative; }
-.hero-copy { position: relative; z-index: 1; }
+.hero { align-items: start; display: block; min-height: calc(100svh - 86px); padding: 2rem 8vw 6rem; position: relative; z-index: 2; }
+.hero-copy { max-width: 47rem; position: relative; z-index: 2; }
+.hero h1 { font-size: clamp(3.7rem, 6.2vw, 6.2rem); }
+.hero .eyebrow { font-size: 0.58rem; letter-spacing: 0.18em; }
 .eyebrow, .section-label, .project-meta, .journal-card-top { color: var(--blue); font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; }
 .eyebrow { margin: 0; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2 { font: 500 clamp(4.2rem, 9.2vw, 9rem)/0.84 var(--display); letter-spacing: -0.055em; margin-bottom: 2rem; }
 h1 em, h2 em { font-style: italic; font-weight: 400; }
 .lede { color: var(--muted); font-size: 1.03rem; line-height: 1.65; max-width: 35rem; }
-.hero-lede { max-width: 27rem; }
+.hero-lede { font-size: clamp(0.9rem, 1vw, 0.98rem); max-width: 20rem; }
 .hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 1.75rem; margin-top: 2.25rem; }
 .button { align-items: center; display: inline-flex; gap: 1rem; justify-content: center; letter-spacing: 0.12em; padding: 1rem 1.35rem; text-transform: uppercase; transition: background 180ms ease, color 180ms ease, transform 180ms ease; }
 .button:hover { transform: translateY(-2px); }
@@ -45,13 +52,11 @@ h1 em, h2 em { font-style: italic; font-weight: 400; }
 .text-link, .card-link { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .text-link span, .card-link span { color: var(--blue); margin-left: 0.45rem; }
 .headline-dot { color: var(--blue); }
-.hero-visual { aspect-ratio: 4 / 5; background: #242844; min-height: 460px; overflow: hidden; position: relative; }
+.hero-visual { inset: 0; min-width: 0; overflow: hidden; position: absolute; z-index: 0; }
 .hero-visual img { object-fit: cover; }
-.hero-visual::after { background: linear-gradient(180deg, transparent 50%, rgba(13, 14, 24, 0.55)); content: ''; inset: 0; pointer-events: none; position: absolute; }
-.hero-visual-label { bottom: 1.35rem; color: white; font-size: 0.6rem; left: 1.35rem; letter-spacing: 0.14em; position: absolute; text-transform: uppercase; z-index: 1; }
-.hero-visual-mark { color: #f7e5b6; font-size: 2rem; position: absolute; right: 1.35rem; top: 1.2rem; z-index: 1; }
-.scroll-note { bottom: 1.5rem; color: var(--muted); font-size: 0.64rem; left: 8vw; letter-spacing: 0.14em; position: absolute; text-transform: uppercase; }
-.scroll-note span { color: var(--blue); margin-left: 0.5rem; }
+.hero-visual::before { background: linear-gradient(90deg, var(--ivory) 0%, rgba(246, 243, 238, 0.96) 11%, rgba(246, 243, 238, 0.72) 23%, rgba(246, 243, 238, 0) 48%); content: ''; inset: 0; pointer-events: none; position: absolute; z-index: 1; }
+.hero-visual::after { background: linear-gradient(180deg, transparent 58%, rgba(13, 14, 24, 0.45)); content: ''; inset: 0; pointer-events: none; position: absolute; z-index: 1; }
+.hero-index { bottom: 8rem; color: var(--muted); font-size: 0.58rem; left: 2.1rem; letter-spacing: 0.18em; margin: 0; position: absolute; text-transform: uppercase; transform: rotate(-90deg); transform-origin: left top; }
 
 .section-rule { border-top: 1px solid var(--line); display: grid; gap: 6vw; grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr); padding: 8rem 8vw; }
 .section-label { display: flex; gap: 1rem; }
@@ -66,9 +71,11 @@ h1 em, h2 em { font-style: italic; font-weight: 400; }
 .section-intro .lede { margin-bottom: 0.5rem; max-width: 18rem; }
 .project-list { display: grid; gap: 3.5rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .project-card { min-width: 0; }
-.project-art { align-items: center; aspect-ratio: 4 / 5; display: flex; justify-content: center; margin-bottom: 1.35rem; overflow: hidden; position: relative; transition: filter 360ms ease, transform 360ms ease; }
+.project-art { align-items: center; aspect-ratio: 4 / 5; background: var(--ink); display: flex; justify-content: center; margin-bottom: 1.35rem; overflow: hidden; position: relative; transition: filter 360ms ease, transform 360ms ease; }
+.project-art-image { object-fit: cover; transition: transform 500ms ease; }
 .project-art::after { background: linear-gradient(180deg, transparent 55%, rgba(11, 11, 11, 0.34)); content: ''; inset: 0; position: absolute; }
 .project-card:hover .project-art { filter: saturate(1.12); transform: translateY(-4px); }
+.project-card:hover .project-art-image { transform: scale(1.03); }
 .project-art span { color: white; font: 500 clamp(1.5rem, 3.2vw, 3.7rem)/0.88 var(--display); letter-spacing: 0.06em; text-align: center; text-transform: uppercase; z-index: 1; }
 .project-art small { bottom: 1rem; color: white; font-size: 0.66rem; left: 1rem; letter-spacing: 0.16em; position: absolute; z-index: 1; }
 .project-meta, .journal-card-top { display: flex; gap: 1rem; justify-content: space-between; }
@@ -125,10 +132,8 @@ h1 em, h2 em { font-style: italic; font-weight: 400; }
 @media (max-width: 900px) {
   .site-header { grid-template-columns: 1fr auto; }
   .desktop-nav { display: none; }
-  .hero { gap: 3rem; grid-template-columns: 1fr; min-height: auto; padding-top: 4rem; }
-  .hero-copy { order: 0; }
-  .hero-visual { margin-left: 12vw; max-width: 34rem; min-height: 0; width: calc(100% - 12vw); }
-  .scroll-note { display: none; }
+  .hero { min-height: auto; padding: 4rem 5vw 6rem; }
+  .hero-index { display: none; }
   .section-rule { gap: 2.5rem; grid-template-columns: 1fr; }
   .section-label { justify-content: space-between; }
   .section-intro { align-items: start; flex-direction: column; gap: 1.5rem; }
@@ -147,10 +152,13 @@ h1 em, h2 em { font-style: italic; font-weight: 400; }
 
 @media (max-width: 600px) {
   .site-header { padding: 1.4rem 1.25rem; }
-  .header-link { font-size: 0.58rem; }
+  .logo-image { width: 8.8rem; }
+  .header-actions { gap: 0; }
+  .language { display: none; }
+  .header-link { font-size: 0.58rem; padding: 0.62rem 0.7rem; }
   .hero { padding: 3rem 1.25rem 5rem; }
+  .hero h1 { font-size: clamp(3.1rem, 12.5vw, 5rem); }
   h1 { font-size: clamp(3.8rem, 18vw, 6.4rem); }
-  .hero-visual { margin-left: 0; width: 100%; }
   .section-rule { padding: 5rem 1.25rem; }
   .manifesto h2, .section-intro h2, .contact h2 { font-size: clamp(3.6rem, 17vw, 5.6rem); }
   .quote { font-size: clamp(2.1rem, 10vw, 3.4rem); }
