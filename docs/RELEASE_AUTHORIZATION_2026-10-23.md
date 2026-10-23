@@ -1,5 +1,7 @@
 # Conqueror Website — publication authorization
 
+> Follow-up21:25 WIB: GitHub main and agent/upgrade-v1.1 were published at a83d7c3062f3cf93a5b85baf84e3fa4a77103b22, preserving both parents. The human then authenticated the CLI and explicitly selected workspace syahdan (not the earlier connector scope syahdan3). Active deployment project:prj_cbQjxfn9OGmyzwyxX6BJlKMOfYtS, team_HDoEP1YAyt8WDY4VmzRtvCzh. Git integration could not connect because that Vercel login lacks repository write access; direct CLI deployment is authorized. The empty connector-created project in syahdan3 remains unused. A first upload included local build caches; .vercelignore now excludes caches, dependencies, env files and local Vercel state. A clean-package redeployment is in progress; no READY result is claimed by this snapshot.
+
 Date:23 October2026, Asia/Jakarta. Project:Website Conqueror Studio.
 
 The human CTO explicitly instructed this session to skip the four pending release gates below and push the current website repository to GitHub and deploy it to Vercel. This supersedes the earlier no-push/no-deployment restriction for this publication task only. It does not authorize database, billing, infrastructure security bypasses, CEO messaging or Notion checklist changes.

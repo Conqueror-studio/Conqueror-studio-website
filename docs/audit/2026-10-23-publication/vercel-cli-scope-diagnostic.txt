@@ -1,0 +1,15 @@
+Exit code: 0
+Vercel CLI 55.0.0 (Node.js 24.18.0)
+Fetching teams
+Fetching user information
+
+  id          Team name
+√ syahdan     Syahdan
+Vercel CLI 55.0.0 (Node.js 24.18.0)
+Fetching projects in syahdan
+> Projects found under syahdan  [2s]
+
+  Project Name        Latest Production URL                  Updated   Node Version
+  website-kipkop-id   https://website-kipkop-id.vercel.app   92d       24.x
+  ijun                https://historiamoment.vercel.app      103d      24.x
+  lucy-hospitality    https://lucy-hospitality.vercel.app    107d      24.x

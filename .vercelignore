@@ -1,0 +1,11 @@
+.git/
+.next/
+.next-dev/
+.next-*/
+node_modules/
+out/
+coverage/
+npm-debug.log*
+.env*
+!.env.example
+.vercel/

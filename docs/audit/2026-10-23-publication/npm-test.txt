@@ -1,0 +1,57 @@
+Exit code: 0
+
+> conqueror-studio-website@0.1.0 test
+> node --test
+
+✔ initial anchor waits for stable enhanced layout, scrolls once, then removes all handlers (16.276ms)
+✔ empty, missing, malformed fragments and back-forward restoration do not override native scroll (2.8984ms)
+✔ user input, changed hash and unmount cancel pending initial alignment (7.2941ms)
+✔ late fonts and unstable layout cannot schedule a delayed scroll after the deadline or cleanup (1.0376ms)
+✔ a shuffled logo contains each original piece exactly once and is not already solved (17.166ms)
+✔ identity shuffle still produces a playable board (1.118ms)
+✔ swapping is immutable, reversible, and rejects invalid slot indices (8.4324ms)
+✔ brand SVG retains its natural ratio and contains no background or external content (17.4023ms)
+✔ rendered logo has transparent letter counters and a flower cutout within the white badge (81.6976ms)
+✔ header and footer use the same proportionate SVG with responsive image sizing (6.8044ms)
+✔ scroll stages clamp safely before, within and after the pinned area (5.9828ms)
+✔ CEO hero media, video posters and team references are available locally (25.5582ms)
+✔ hero selects once per visit and shares its poster between background and cameo (13.728ms)
+✔ hero and studio running text omit manual pause controls while retaining motion safeguards (12.6087ms)
+✔ scroll enhancements have cleanup, motion preference and manual alternatives (17.6691ms)
+✔ team retains scroll-driven cards without numbered navigation (3.942ms)
+✔ featured work uses mobile scroll motion, clickable names, and no bottom controls (8.0136ms)
+✔ featured projects link to their live sites using local hero assets (4.5086ms)
+✔ both glob entry points reject benign inputs without processing them (4.6093ms)
+✔ default root policy leaves supported settings untouched (1.3174ms)
+✔ policy rejects every explicit root including empty and undefined values (1.4532ms)
+✔ policy rejects inherited roots and malformed settings (0.9719ms)
+✔ original lint families still detect real violations and accept a valid component (8662.1426ms)
+Pages directory cannot be found at . If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+✔ actual ESLint registers root policy at error severity and rejects empty override (147.7608ms)
+✔ explicit release origin is HTTPS and Vercel demo/local are never indexable by default (9.1978ms)
+✔ invalid release or hosted URL configuration fails closed instead of publishing localhost (5.2292ms)
+✔ production headers harden framing, MIME, referrers and unused capabilities without development CSP breakage (2.3077ms)
+✔ inactive enhanced portfolio panels are inert; initial anchor coordinator is mounted without visible UI (25.1271ms)
+✔ CI explicitly runs lockfile quality and security gates without exceptions or deployment (5.8652ms)
+✔ homepage retains every navigation destination (30.3529ms)
+✔ FAQ scopes the nine exclusions to basic website pricing after Pricing and before the closing (5.6213ms)
+✔ FAQ adds the five approved general questions without replacing the existing scope answer (3.8663ms)
+✔ commercial contact actions and the three services remain available (8.8362ms)
+✔ Figma artwork and fonts are durable, non-empty local assets (28.427ms)
+✔ interactive controls expose keyboard and reduced-motion support (4.6376ms)
+✔ production builds cannot overwrite the running preview cache (1.7244ms)
+✔ manifest pins exact OS dependency versions (3.7218ms)
+✔ SEC-01 installed leaf is the private guard and default roots retain cwd (12.5099ms)
+Pages directory cannot be found at . If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+✔ SEC-01 actual lint rejects custom roots instead of skipping Next rules (8608.9269ms)
+✔ all actual files keep every original rule and metadata plus the root policy (4108.3681ms)
+ℹ 34 files linted; all 31 original files/rules retained; no warnings/errors
+✔ CI keeps time limits and both raw audit gates (4.2568ms)
+ℹ tests 41
+ℹ suites 0
+ℹ pass 41
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14109.9892

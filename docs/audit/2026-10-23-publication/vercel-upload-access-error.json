@@ -1,0 +1,28 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"error\":{\"message\":\"Vercel API request failed (403: forbidden). Not authorized: Trying to access resource under scope \\\"syahdan3\\\". You must re-authenticate to this scope or use a token with access to this scope.\",\"recovery\":\"Call authorize_team_access (or authorize_team_sso if that is the available tool) with this teamId and show the user the returned link. After they approve team access and complete SSO if required, retry the same request with this connection. Do not ask them to reconnect.\",\"remediation\":{\"actor\":\"agent\",\"action\":\"authorize_team_access\"},\"status\":403,\"code\":\"forbidden\",\"operation\":\"POST /v2/files\",\"saml\":false,\"ssoEnforced\":false,\"scope\":\"syahdan3\",\"teamId\":\"team_1QTFfKIGbg0yYWNLviVOZcuv\",\"requestId\":\"sin1:sfo1::7dmvf-1792765027663-a89b6005d026\"}}"
+    }
+  ],
+  "structuredContent": {
+    "error": {
+      "message": "Vercel API request failed (403: forbidden). Not authorized: Trying to access resource under scope \"syahdan3\". You must re-authenticate to this scope or use a token with access to this scope.",
+      "recovery": "Call authorize_team_access (or authorize_team_sso if that is the available tool) with this teamId and show the user the returned link. After they approve team access and complete SSO if required, retry the same request with this connection. Do not ask them to reconnect.",
+      "remediation": {
+        "actor": "agent",
+        "action": "authorize_team_access"
+      },
+      "status": 403,
+      "code": "forbidden",
+      "operation": "POST /v2/files",
+      "saml": false,
+      "ssoEnforced": false,
+      "scope": "syahdan3",
+      "teamId": "team_1QTFfKIGbg0yYWNLviVOZcuv",
+      "requestId": "sin1:sfo1::7dmvf-1792765027663-a89b6005d026"
+    },
+    "error_code": "INVALID_ARGUMENT"
+  },
+  "isError": true
+}
