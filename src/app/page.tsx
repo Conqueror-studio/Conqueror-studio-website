@@ -10,7 +10,7 @@ import FaqSection from '../components/faq-section';
 import FooterLogoPuzzle from '../components/footer-logo-puzzle';
 import { process, services } from '../lib/content';
 
-const whatsappUrl = 'https://wa.me/6281295919621?text=Halo%20Conqueror%20Studio%2C%20saya%20ingin%20mendiskusikan%20project%20baru.';
+const whatsappUrl = 'https://wa.me/6285177835232?text=Halo%20Conqueror%20Studio%2C%20saya%20ingin%20mendiskusikan%20project%20baru.';
 const emailUrl = 'mailto:conqueror.agency404@gmail.com?subject=Project%20inquiry%20%E2%80%94%20Conqueror%20Studio';
 export default function HomePage() {
   return (

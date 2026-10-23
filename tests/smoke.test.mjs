@@ -70,7 +70,8 @@ test('FAQ adds the five approved general questions without replacing the existin
 
 test('commercial contact actions and the three services remain available', async () => {
   const [source, content] = await Promise.all([pageSources(), read('src/lib/content.ts')]);
-  assert.match(source, /https:\/\/wa\.me\/6281295919621\?text=/);
+  assert.match(source, /https:\/\/wa\.me\/6285177835232\?text=/);
+  assert.doesNotMatch(source, /6281295919621/);
   assert.match(source, /mailto:conqueror\.agency404@gmail\.com/);
   assert.match(source, /Start on WhatsApp/);
   for (const service of ['Website Design & Development', 'Workflow Automation', 'Tool Integration']) {
