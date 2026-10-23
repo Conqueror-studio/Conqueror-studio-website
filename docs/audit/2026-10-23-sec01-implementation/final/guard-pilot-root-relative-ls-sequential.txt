@@ -1,0 +1,12 @@
+Evidence key: guard-pilot-root-relative-ls-sequential
+Exit code: 0
+conqueror-studio-website@0.1.0 C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707
+└─┬ eslint-config-next@16.3.1
+  └─┬ @next/eslint-plugin-next@16.3.1 overridden
+    └── fast-glob@npm:@conqueror/next-root-guard@0.1.0 -> .\tooling\next-root-guard
+
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          C571B4082FA18155FD93CAB01ED106A135248A3BCCD34ED9A21D8A02F95389D1       C:\Users\HP\AppData\Local\Temp\…
+

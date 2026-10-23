@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-22 Asia/Jakarta",
+  "source": "Official npm registry (npm view) and GitHub Advisory Database",
+  "bracesLatest": "3.0.3",
+  "eslintConfigNextLatest": "16.4.2",
+  "nextEslintPlugin1631Dependencies": { "fast-glob": "3.3.1", "@eslint-community/eslint-utils": "4.9.1" },
+  "nextEslintPlugin1642Dependencies": { "fast-glob": "3.3.1", "@eslint-community/eslint-utils": "4.9.1" },
+  "advisory": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+  "patchedVersions": "None",
+  "actionTaken": "No dependency changes; no forced downgrade or risk exception.",
+  "actionTagVerification": {
+    "method": "git ls-remote official action repositories",
+    "checkout_v4.2.2": "11bd71901bbe5b1630ceea73d27597364c9af683",
+    "setupNode_v4.4.0": "49933ea5288caeca8642d1e84afbd3f7d6820020"
+  }
+}

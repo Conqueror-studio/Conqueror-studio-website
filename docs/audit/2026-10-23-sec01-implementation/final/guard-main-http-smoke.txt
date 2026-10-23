@@ -1,0 +1,9 @@
+Evidence key: guard-main-http-smoke
+Exit code: 0
+{
+  "StatusCode": 200,
+  "HasHero": true,
+  "HasWhatsApp": true,
+  "HasEmail": true,
+  "HasFAQ": true
+}

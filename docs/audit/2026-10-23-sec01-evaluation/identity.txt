@@ -1,0 +1,7 @@
+Exit code: 0
+
+agent/upgrade-v1.1
+46554a03dbda44e507db76db0e310420e15fc8d6
+v24.18.0
+11.16.0
+2026-10-23 17:55:57

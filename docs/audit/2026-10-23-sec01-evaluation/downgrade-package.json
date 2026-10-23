@@ -1,0 +1,10 @@
+{
+  "name": "conqueror-sec01-downgrade-evaluation",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "eslint-config-next": "14.2.35",
+    "typescript": "5.7.2"
+  }
+}

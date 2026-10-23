@@ -1,0 +1,82 @@
+Exit code: 1
+
+✖ SEC-01 sentinel catches benign rootDir expansion and restores the original functions (1.0189ms)
+✖ SEC-01 guard rejects an actual lint run with a benign optional rootDir override (0.8203ms)
+✖ all actual linted files retain default roots and lint without entering the SEC-01 glob path (0.7131ms)
+✖ CI bounds quality and security jobs while keeping the full audit gate (13.2493ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 703.3502
+
+✖ failing tests:
+
+test at tests\toolchain-security.test.mjs:18:1
+✖ SEC-01 sentinel catches benign rootDir expansion and restores the original functions (1.0189ms)
+  ReferenceError: installGlobSentinel is not defined
+      at TestContext.<anonymous> (file:///D:/File%20Syahdan/Area%20666%20Conqueror%20Studio/Web%20Conqueror/website-repo/tests/toolchain-security.test.mjs:20:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+
+test at tests\toolchain-security.test.mjs:32:1
+✖ SEC-01 guard rejects an actual lint run with a benign optional rootDir override (0.8203ms)
+  ReferenceError: installGlobSentinel is not defined
+      at TestContext.<anonymous> (file:///D:/File%20Syahdan/Area%20666%20Conqueror%20Studio/Web%20Conqueror/website-repo/tests/toolchain-security.test.mjs:33:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+
+test at tests\toolchain-security.test.mjs:41:1
+✖ all actual linted files retain default roots and lint without entering the SEC-01 glob path (0.7131ms)
+  ReferenceError: installGlobSentinel is not defined
+      at TestContext.<anonymous> (file:///D:/File%20Syahdan/Area%20666%20Conqueror%20Studio/Web%20Conqueror/website-repo/tests/toolchain-security.test.mjs:42:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at tests\toolchain-security.test.mjs:62:1
+✖ CI bounds quality and security jobs while keeping the full audit gate (13.2493ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /^    timeout-minutes: 15$/m. Input:
+  
+  '  quality:\n' +
+    '    runs-on: ubuntu-latest\n' +
+    '    steps:\n' +
+    '      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2\n' +
+    '        with:\n' +
+    '          persist-credentials: false\n' +
+    '      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0\n' +
+    '        with:\n' +
+    '          node-version: 22\n' +
+    '          cache: npm\n' +
+    '      - run: npm ci\n' +
+    '      - run: npm test\n' +
+    '      - run: npm run lint\n' +
+    '      - run: npm run typecheck\n' +
+    '      - run: npm run build\n' +
+    '        env:\n' +
+    '          # Reserved, non-routable noindex fixture; not a production domain.\n' +
+    '          VERCEL_URL: conqueror-quality-check.invalid\n' +
+    "          VERCEL: '1'"
+  
+      at TestContext.<anonymous> (file:///D:/File%20Syahdan/Area%20666%20Conqueror%20Studio/Web%20Conqueror/website-repo/tests/toolchain-security.test.mjs:68:10)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: "  quality:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2\n        with:\n          persist-credentials: false\n      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0\n        with:\n          node-version: 22\n          cache: npm\n      - run: npm ci\n      - run: npm test\n      - run: npm run lint\n      - run: npm run typecheck\n      - run: npm run build\n        env:\n          # Reserved, non-routable noindex fixture; not a production domain.\n          VERCEL_URL: conqueror-quality-check.invalid\n          VERCEL: '1'",
+    expected: /^    timeout-minutes: 15$/m,
+    operator: 'match',
+    diff: 'simple'
+  }

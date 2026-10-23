@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-22",
+  "timezone": "Asia/Jakarta",
+  "repository": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo",
+  "branch": "agent/upgrade-v1.1",
+  "head": "46554a03dbda44e507db76db0e310420e15fc8d6",
+  "environment": {
+    "os": "Windows",
+    "node": "24.18.0",
+    "npm": "11.16.0",
+    "ciNode": "22 (remote NOT RUN)"
+  },
+  "results": {
+    "red": {
+      "exit_code": 1,
+      "evidence": "guard-red.txt"
+    },
+    "green": {
+      "exit_code": 0,
+      "evidence": "guard-green.txt"
+    },
+    "full-tests": {
+      "exit_code": 0,
+      "evidence": "npm-test.txt"
+    },
+    "lint": {
+      "exit_code": 0,
+      "evidence": "npm-lint.txt"
+    },
+    "typecheck": {
+      "exit_code": 0,
+      "evidence": "npm-typecheck.txt"
+    },
+    "build": {
+      "exit_code": 0,
+      "evidence": "npm-build.txt"
+    },
+    "diff-check": {
+      "exit_code": 0,
+      "evidence": "git-diff-check.txt"
+    },
+    "audit-prod": {
+      "exit_code": 0,
+      "evidence": "npm-audit-production.json"
+    },
+    "audit-all": {
+      "exit_code": 1,
+      "evidence": "npm-audit-all.json"
+    }
+  },
+  "limits": [
+    "This is a scoped local toolchain mitigation, not a braces patch or overall security assurance.",
+    "Benign optional Next rootDir patterns are rejected only inside the regression-test process; ordinary lint is not a sandbox.",
+    "Remote CI timeouts are configuration only until a separately authorized push and run.",
+    "Browser QA, fresh npm ci, Node 22/Linux CI, Vercel hosting and reduced-motion/video runtime rechecks NOT RUN this turn.",
+    "No staging, commit, push, deployment, database, Notion checklist or CEO message."
+  ]
+}

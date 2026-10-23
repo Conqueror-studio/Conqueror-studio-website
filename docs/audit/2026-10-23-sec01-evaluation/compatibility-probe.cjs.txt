@@ -1,0 +1,27 @@
+const assert = require('node:assert/strict');
+const test = require('node:test');
+const path = require('node:path');
+const baseline = require('D:/File Syahdan/Area 666 Conqueror Studio/Web Conqueror/website-repo/node_modules/@next/eslint-plugin-next/dist/utils/get-root-dirs.js');
+const candidate = require('@next/eslint-plugin-next/dist/utils/get-root-dirs.js');
+if (process.env.SEC01_PROBE_EXPAND_DIRECTORIES === 'false') {
+  const { createRequire } = require('node:module');
+  const fromPlugin = createRequire(require.resolve('@next/eslint-plugin-next/package.json'));
+  const candidateGlob = fromPlugin('fast-glob');
+  const originalGlobSync = candidateGlob.globSync;
+  candidateGlob.globSync = (pattern, options) => originalGlobSync(pattern, { ...options, expandDirectories: false });
+}
+const normalize = (roots) => roots.map((dir) => path.resolve(dir)).sort();
+for (const [name, rootDir] of [
+  ['default roots', undefined],
+  ['literal directory', 'fixture/apps/web'],
+  ['single-level wildcard', 'fixture/apps/*'],
+  ['absolute literal directory', path.resolve('fixture/apps/web').replaceAll('\\\\', '/')],
+  ['zero-padded brace range', 'fixture/apps/{01..03}'],
+  ['stepped brace range', 'fixture/apps/{1..5..2}'],
+  ['array of directories', ['fixture/apps/web', 'fixture/apps/shop']],
+]) {
+  test('candidate must preserve Next root helper behavior: ' + name, () => {
+    const context = { cwd: process.cwd(), settings: { next: rootDir === undefined ? {} : { rootDir } } };
+    assert.deepEqual(normalize(candidate.getRootDirs(context)), normalize(baseline.getRootDirs(context)));
+  });
+}

@@ -1,0 +1,28 @@
+Evidence key: guard-pilot-root-relative-install
+Exit code: 1
+npm warn cleanup Failed to remove some directories [
+npm warn cleanup   [
+npm warn cleanup     '\\\\?\\C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\\node_modules\\next',
+npm warn cleanup     [Error: ENOTEMPTY: directory not empty, rmdir 'C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\node_modules\next\dist\compiled\scheduler'] {
+npm warn cleanup       errno: -4051,
+npm warn cleanup       code: 'ENOTEMPTY',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\\node_modules\\next\\dist\\compiled\\scheduler'
+npm warn cleanup     }
+npm warn cleanup   ],
+npm warn cleanup   [
+npm warn cleanup     'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\\node_modules\\next',
+npm warn cleanup     [Error: ENOTEMPTY: directory not empty, rmdir 'C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\node_modules\next\dist\compiled\scheduler'] {
+npm warn cleanup       errno: -4051,
+npm warn cleanup       code: 'ENOTEMPTY',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\\node_modules\\next\\dist\\compiled\\scheduler'
+npm warn cleanup     }
+npm warn cleanup   ]
+npm warn cleanup ]
+npm error code ENOTEMPTY
+npm error syscall rmdir
+npm error path C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\node_modules\next\dist\esm\lib
+npm error errno -4051
+npm error ENOTEMPTY: directory not empty, rmdir 'C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\node_modules\next\dist\esm\lib'
+npm error A complete log of this run can be found in: C:\Users\HP\AppData\Local\npm-cache\_logs\2026-10-23T11_50_34_566Z-debug-0.log

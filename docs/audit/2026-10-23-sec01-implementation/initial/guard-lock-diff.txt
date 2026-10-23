@@ -1,0 +1,30 @@
+Evidence key: guard-lock-diff
+Exit code: 0
+{
+  "changedRetainedPackages": [
+    {
+      "name": "node_modules/fast-glob",
+      "before": "3.3.1"
+    }
+  ],
+  "removed": [
+    "node_modules/@nodelib/fs.scandir",
+    "node_modules/@nodelib/fs.stat",
+    "node_modules/@nodelib/fs.walk",
+    "node_modules/braces",
+    "node_modules/fast-glob/node_modules/glob-parent",
+    "node_modules/fastq",
+    "node_modules/fill-range",
+    "node_modules/is-number",
+    "node_modules/merge2",
+    "node_modules/micromatch",
+    "node_modules/picomatch",
+    "node_modules/queue-microtask",
+    "node_modules/reusify",
+    "node_modules/run-parallel",
+    "node_modules/to-regex-range"
+  ],
+  "added": [
+    "tooling/next-root-guard"
+  ]
+}

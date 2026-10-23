@@ -1,0 +1,12 @@
+{
+  "name": "@conqueror/next-root-guard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Project-specific default-root-only guard; not a general glob implementation",
+  "main": "index.cjs",
+  "files": [
+    "index.cjs",
+    "policy.mjs",
+    "README.md"
+  ]
+}

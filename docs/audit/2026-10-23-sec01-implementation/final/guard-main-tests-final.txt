@@ -1,0 +1,58 @@
+Evidence key: guard-main-tests-final
+Exit code: 0
+
+> conqueror-studio-website@0.1.0 test
+> node --test
+
+✔ initial anchor waits for stable enhanced layout, scrolls once, then removes all handlers (35.388ms)
+✔ empty, missing, malformed fragments and back-forward restoration do not override native scroll (1.7155ms)
+✔ user input, changed hash and unmount cancel pending initial alignment (5.6295ms)
+✔ late fonts and unstable layout cannot schedule a delayed scroll after the deadline or cleanup (1.1288ms)
+✔ a shuffled logo contains each original piece exactly once and is not already solved (17.6101ms)
+✔ identity shuffle still produces a playable board (0.9152ms)
+✔ swapping is immutable, reversible, and rejects invalid slot indices (2.0486ms)
+✔ brand SVG retains its natural ratio and contains no background or external content (22.1538ms)
+✔ rendered logo has transparent letter counters and a flower cutout within the white badge (89.4802ms)
+✔ header and footer use the same proportionate SVG with responsive image sizing (12.3319ms)
+✔ scroll stages clamp safely before, within and after the pinned area (33.3379ms)
+✔ CEO hero media, video posters and team references are available locally (63.6371ms)
+✔ hero selects once per visit and shares its poster between background and cameo (9.7862ms)
+✔ hero and studio running text omit manual pause controls while retaining motion safeguards (7.02ms)
+✔ scroll enhancements have cleanup, motion preference and manual alternatives (14.3097ms)
+✔ team retains scroll-driven cards without numbered navigation (21.8555ms)
+✔ featured work uses mobile scroll motion, clickable names, and no bottom controls (24.241ms)
+✔ featured projects link to their live sites using local hero assets (24.6944ms)
+✔ both glob entry points reject benign inputs without processing them (3.9224ms)
+✔ default root policy leaves supported settings untouched (1.5946ms)
+✔ policy rejects every explicit root including empty and undefined values (1.2767ms)
+✔ policy rejects inherited roots and malformed settings (1.4128ms)
+✔ original lint families still detect real violations and accept a valid component (9364.9326ms)
+Pages directory cannot be found at . If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+✔ actual ESLint registers root policy at error severity and rejects empty override (148.8496ms)
+✔ explicit release origin is HTTPS and Vercel demo/local are never indexable by default (16.8682ms)
+✔ invalid release or hosted URL configuration fails closed instead of publishing localhost (16.0079ms)
+✔ production headers harden framing, MIME, referrers and unused capabilities without development CSP breakage (3.7033ms)
+✔ inactive enhanced portfolio panels are inert; initial anchor coordinator is mounted without visible UI (79.9683ms)
+✔ CI explicitly runs lockfile quality and security gates without exceptions or deployment (7.6225ms)
+✔ homepage retains every navigation destination (68.0047ms)
+✔ FAQ scopes the nine exclusions to basic website pricing after Pricing and before the closing (24.5441ms)
+✔ FAQ adds the five approved general questions without replacing the existing scope answer (21.6077ms)
+✔ commercial contact actions and the three services remain available (21.0029ms)
+✔ Figma artwork and fonts are durable, non-empty local assets (84.5095ms)
+✔ interactive controls expose keyboard and reduced-motion support (8.7261ms)
+✔ production builds cannot overwrite the running preview cache (1.7278ms)
+✔ manifest pins exact OS dependency versions (9.8414ms)
+✔ SEC-01 installed leaf is the private guard and default roots retain cwd (8.4448ms)
+Pages directory cannot be found at . If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+✔ SEC-01 actual lint rejects custom roots instead of skipping Next rules (9222.6668ms)
+✔ all actual files keep every original rule and metadata plus the root policy (3580.8263ms)
+ℹ 34 files linted; all 31 original files/rules retained; no warnings/errors
+✔ CI keeps time limits and both raw audit gates (4.1727ms)
+ℹ tests 41
+ℹ suites 0
+ℹ pass 41
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14907.6525

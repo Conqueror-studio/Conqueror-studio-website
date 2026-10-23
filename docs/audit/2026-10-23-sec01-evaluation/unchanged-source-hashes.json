@@ -1,0 +1,264 @@
+{
+  "before": [
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\package.json",
+      "Hash": "2AD1AEE930A303D643F8EA176604394194023E1D4566FE9A8445137777F75CD0"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\package-lock.json",
+      "Hash": "6A2E05118F150A0461F536C3CDB41C61DAE724ABA410A5B86819232B7451F2F1"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\eslint.config.mjs",
+      "Hash": "6732023EEE77D6BA30634A7FF0C034CC6E6351670AD67FD8890D7112E046A222"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\tests\\toolchain-security.test.mjs",
+      "Hash": "B674AC4D1D5F2B4FA3B5C44A68D4B721E80F459BA47A570742D716FF025B84EA"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\.github\\workflows\\quality.yml",
+      "Hash": "9AD4C29CD28A82607C3A5E7CBFD9E953757E8DE628CFBF51B38126D5A13D5933"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\use-scroll-stage.ts",
+      "Hash": "84C3D65B22ECBCD6616A9B6FEFAC606DB47CD2E9D5DCB2EB4F928470FA3A85D8"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\tools-marquee.tsx",
+      "Hash": "4AFF141866990A7E2D5D877A7488D592C4ED5454685B2107D4FE06CB7862194B"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\team-story.tsx",
+      "Hash": "DE169BF2221EA89D7899BFDBA4C47E516B8A85E8CA94C8E9FD67A24E80B9CC68"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\studio-story.tsx",
+      "Hash": "95CBCD4CFAF01ED41DA59A08E6ACBF27C90EC97A2E3C647412F697D9F820393E"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\studio-navigation.tsx",
+      "Hash": "139DB018FEF57F8FBA7DC96DFC4B8CD03DCA1ADA956C2CDA781B6796FD5B18E5"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\pricing-section.tsx",
+      "Hash": "EA1AB6D645893FCE79E348AEB0A0A0B772581710A34DD3B418475E01FE6C67F0"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\pricing-section.module.css",
+      "Hash": "4979D4E9E25CB85BD1AEC36C0B29FBC310BE1DEBBBEE04F1C4DA51F63737D9C5"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\initial-anchor.tsx",
+      "Hash": "58A0A1E1FC2EABF54862526B94217329BD437DB3075B0D7C56640865B6FC5C1B"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\hero-experience.tsx",
+      "Hash": "4C08C48BB8FAB287ADED6863974B5D244608B4D7204AEEB1762713843CBEA891"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\footer-logo-puzzle.tsx",
+      "Hash": "FD17D84B39F8EEDDD4644D3F3364D04BC12C23403962524E3CA00EC7954B9BA7"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\footer-logo-puzzle.module.css",
+      "Hash": "F668499A0F1BD647A81D627230C683F3AA17FB6A7FB68716BAD5D65BF65069B8"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\featured-work.tsx",
+      "Hash": "57B33BC65A25FB430FB55AC9992597F9A9D26504BBFCE46748ACE8FD00C2C593"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\faq-section.tsx",
+      "Hash": "E30AFC4F21E24CF947A1689C15AA7B0E6882F139C9EE496595589FB599BFE136"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\faq-section.module.css",
+      "Hash": "FCB97859DD842BA554A298741A315874AD417A2793E424FD6B6D3C29E5632BD5"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\closing-invitation.tsx",
+      "Hash": "E474A83F5126B960BAEE4A7B405BDB8062AFCEDC7616E1FBF0EAEC25E6D5F3D3"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\site-config.mjs",
+      "Hash": "E59AA5E03C7131DFECBE6C3E5536DD2CB5C7E1515B51EC06D2C7DBF9FB1CAAE2"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\motion-math.mjs",
+      "Hash": "9FB0E31E4DB8EFFCAF3C84103434C93E7DAB422F4928B5BA3E954396398FFD4A"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\logo-puzzle.mjs",
+      "Hash": "2AC94CA8F45E1EC20D0837123CA58C9EBABCAA51896E8869D001489A13F242F5"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\initial-anchor.mjs",
+      "Hash": "0E76A326190031347528D89025CA17740FC3D32BD0F29C51B005663DCC95B2C7"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\content.ts",
+      "Hash": "3A84F3BDA1BA7796F8240BB20DA359B55A76862A1D1B60E1771CD0C0FD0C333A"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\not-found.tsx",
+      "Hash": "8BF7ABCB773458173FE1D653A38E062A67147E143A084BA44BEAAF0EBD73C1FC"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\motion.css",
+      "Hash": "CEF548670D2DCB3B48D8B46ABC6472E0A44C56E9C717BCA2FF318ED3C1D265FE"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\layout.tsx",
+      "Hash": "325B8646BD5D7B33250A1B07C6EB11089882AF528EE84A754BD97659DAD13B4A"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\globals.css",
+      "Hash": "4C948A3AEC2C703C5C1EA115ABBFF0A62190E5790D0EC7AE1A49219A407A9878"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\robots.ts",
+      "Hash": "5935E44D05CF4AE3D0C8F68571DAC31B9281E449F9A422F04B9A7B05ACC81B03"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\page.tsx",
+      "Hash": "1A21673E22B5FC4F8A11C0F550D5D52315E29A4F188113E7DC3893EF679FE55E"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\sitemap.ts",
+      "Hash": "2360076905C3BECAD3164F9BD2A53E162D8C2917797DA680A747717B3463026E"
+    }
+  ],
+  "after": [
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\package.json",
+      "Hash": "2AD1AEE930A303D643F8EA176604394194023E1D4566FE9A8445137777F75CD0"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\package-lock.json",
+      "Hash": "6A2E05118F150A0461F536C3CDB41C61DAE724ABA410A5B86819232B7451F2F1"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\eslint.config.mjs",
+      "Hash": "6732023EEE77D6BA30634A7FF0C034CC6E6351670AD67FD8890D7112E046A222"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\tests\\toolchain-security.test.mjs",
+      "Hash": "B674AC4D1D5F2B4FA3B5C44A68D4B721E80F459BA47A570742D716FF025B84EA"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\.github\\workflows\\quality.yml",
+      "Hash": "9AD4C29CD28A82607C3A5E7CBFD9E953757E8DE628CFBF51B38126D5A13D5933"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\site-config.mjs",
+      "Hash": "E59AA5E03C7131DFECBE6C3E5536DD2CB5C7E1515B51EC06D2C7DBF9FB1CAAE2"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\motion-math.mjs",
+      "Hash": "9FB0E31E4DB8EFFCAF3C84103434C93E7DAB422F4928B5BA3E954396398FFD4A"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\logo-puzzle.mjs",
+      "Hash": "2AC94CA8F45E1EC20D0837123CA58C9EBABCAA51896E8869D001489A13F242F5"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\initial-anchor.mjs",
+      "Hash": "0E76A326190031347528D89025CA17740FC3D32BD0F29C51B005663DCC95B2C7"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\lib\\content.ts",
+      "Hash": "3A84F3BDA1BA7796F8240BB20DA359B55A76862A1D1B60E1771CD0C0FD0C333A"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\sitemap.ts",
+      "Hash": "2360076905C3BECAD3164F9BD2A53E162D8C2917797DA680A747717B3463026E"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\robots.ts",
+      "Hash": "5935E44D05CF4AE3D0C8F68571DAC31B9281E449F9A422F04B9A7B05ACC81B03"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\page.tsx",
+      "Hash": "1A21673E22B5FC4F8A11C0F550D5D52315E29A4F188113E7DC3893EF679FE55E"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\not-found.tsx",
+      "Hash": "8BF7ABCB773458173FE1D653A38E062A67147E143A084BA44BEAAF0EBD73C1FC"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\motion.css",
+      "Hash": "CEF548670D2DCB3B48D8B46ABC6472E0A44C56E9C717BCA2FF318ED3C1D265FE"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\layout.tsx",
+      "Hash": "325B8646BD5D7B33250A1B07C6EB11089882AF528EE84A754BD97659DAD13B4A"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\app\\globals.css",
+      "Hash": "4C948A3AEC2C703C5C1EA115ABBFF0A62190E5790D0EC7AE1A49219A407A9878"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\use-scroll-stage.ts",
+      "Hash": "84C3D65B22ECBCD6616A9B6FEFAC606DB47CD2E9D5DCB2EB4F928470FA3A85D8"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\tools-marquee.tsx",
+      "Hash": "4AFF141866990A7E2D5D877A7488D592C4ED5454685B2107D4FE06CB7862194B"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\team-story.tsx",
+      "Hash": "DE169BF2221EA89D7899BFDBA4C47E516B8A85E8CA94C8E9FD67A24E80B9CC68"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\studio-story.tsx",
+      "Hash": "95CBCD4CFAF01ED41DA59A08E6ACBF27C90EC97A2E3C647412F697D9F820393E"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\studio-navigation.tsx",
+      "Hash": "139DB018FEF57F8FBA7DC96DFC4B8CD03DCA1ADA956C2CDA781B6796FD5B18E5"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\pricing-section.tsx",
+      "Hash": "EA1AB6D645893FCE79E348AEB0A0A0B772581710A34DD3B418475E01FE6C67F0"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\pricing-section.module.css",
+      "Hash": "4979D4E9E25CB85BD1AEC36C0B29FBC310BE1DEBBBEE04F1C4DA51F63737D9C5"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\initial-anchor.tsx",
+      "Hash": "58A0A1E1FC2EABF54862526B94217329BD437DB3075B0D7C56640865B6FC5C1B"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\hero-experience.tsx",
+      "Hash": "4C08C48BB8FAB287ADED6863974B5D244608B4D7204AEEB1762713843CBEA891"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\footer-logo-puzzle.tsx",
+      "Hash": "FD17D84B39F8EEDDD4644D3F3364D04BC12C23403962524E3CA00EC7954B9BA7"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\footer-logo-puzzle.module.css",
+      "Hash": "F668499A0F1BD647A81D627230C683F3AA17FB6A7FB68716BAD5D65BF65069B8"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\featured-work.tsx",
+      "Hash": "57B33BC65A25FB430FB55AC9992597F9A9D26504BBFCE46748ACE8FD00C2C593"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\faq-section.tsx",
+      "Hash": "E30AFC4F21E24CF947A1689C15AA7B0E6882F139C9EE496595589FB599BFE136"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\faq-section.module.css",
+      "Hash": "FCB97859DD842BA554A298741A315874AD417A2793E424FD6B6D3C29E5632BD5"
+    },
+    {
+      "Path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\src\\components\\closing-invitation.tsx",
+      "Hash": "E474A83F5126B960BAEE4A7B405BDB8062AFCEDC7616E1FBF0EAEC25E6D5F3D3"
+    }
+  ],
+  "unchanged": true,
+  "changes": []
+}

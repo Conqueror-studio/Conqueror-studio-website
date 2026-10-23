@@ -1,0 +1,15 @@
+Exit code: 0
+
+✔ SEC-01 sentinel catches benign rootDir expansion and restores the original functions (3.1321ms)
+✔ SEC-01 guard rejects an actual lint run with a benign optional rootDir override (5151.5844ms)
+✔ all actual linted files retain default roots and lint without entering the SEC-01 glob path (2239.4623ms)
+ℹ 31 effective configs checked; zero warnings/errors and zero guarded glob calls
+✔ CI bounds quality and security jobs while keeping the full audit gate (4.1873ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7975.298

@@ -1,236 +1,95 @@
 import Image from 'next/image';
-import { industries, journal, process, projects, services, updates } from '../lib/content';
+import HeroExperience from '../components/hero-experience';
+import ToolsMarquee from '../components/tools-marquee';
+import StudioStory from '../components/studio-story';
+import TeamStory from '../components/team-story';
+import ClosingInvitation from '../components/closing-invitation';
+import FeaturedWork from '../components/featured-work';
+import PricingSection from '../components/pricing-section';
+import FaqSection from '../components/faq-section';
+import FooterLogoPuzzle from '../components/footer-logo-puzzle';
+import { process, services } from '../lib/content';
 
-const whatsappUrl = 'https://wa.me/6281295919621';
-
+const whatsappUrl = 'https://wa.me/6281295919621?text=Halo%20Conqueror%20Studio%2C%20saya%20ingin%20mendiskusikan%20project%20baru.';
+const emailUrl = 'mailto:conqueror.agency404@gmail.com?subject=Project%20inquiry%20%E2%80%94%20Conqueror%20Studio';
 export default function HomePage() {
   return (
-    <main>
-      <div className="hero-shell">
-        <div className="hero-visual">
-          <Image
-            className="hero-art-image"
-            src="/hero-art.jpg"
-            alt="Placeholder Renaissance-inspired painting supplied as Conqueror Studio hero artwork"
-            fill
-            priority
-            sizes="100vw"
-          />
-        </div>
+    <>
+      <a href="#about" className="skip-link">Skip to content</a>
+      <main>
+        <HeroExperience contactUrl={whatsappUrl} />
+        <ToolsMarquee />
+        <StudioStory />
 
-        <header className="site-header">
-        <a className="wordmark" href="#hero" aria-label="Conqueror Studio home">
-          <Image
-            className="logo-image"
-            src="/brand/conqueror-logo.svg"
-            alt="Conqueror Studio"
-            width={270}
-            height={72}
-            priority
-          />
-        </a>
-        <nav className="desktop-nav" aria-label="Primary navigation">
-          <a href="#work">Work</a>
-          <a href="#craft">Services</a>
-          <a href="#manifesto">About</a>
-          <a href="#process">Process</a>
-          <a href="#journal">Journal</a>
-        </nav>
-        <div className="header-actions">
-          <span className="language">ID / EN</span>
-          <a className="header-link" href="#contact">
-            Free consultation <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-        </header>
-
-      <section id="hero" className="hero" aria-labelledby="hero-heading">
-        <div className="hero-copy">
-          <p className="eyebrow">Digital atelier</p>
-          <h1 id="hero-heading">
-            We Create
-            <br />
-            <em>Digital</em>
-            <br />
-            Masterpieces<span className="headline-dot">.</span>
-          </h1>
-          <p className="lede hero-lede">
-            Timeless digital experiences and intelligent systems for ambitious modern brands.
-          </p>
-          <div className="hero-actions">
-            <a className="button button-dark" href={whatsappUrl} target="_blank" rel="noreferrer">
-              Free consultation <span aria-hidden="true">↗</span>
-            </a>
-            <a className="text-link" href="#work">
-              Explore our work <span aria-hidden="true">↗</span>
-            </a>
+        <section id="about" className="about-section section-space" aria-labelledby="about-heading" data-figma-node="13:329">
+          <p className="about-lede">A small team from Sukabumi building custom websites, automated workflows, and seamless tool integrations so founders can stop doing manual work and start growing.</p>
+          <div className="about-copy">
+            <h2 id="about-heading">Building Systems<br />That Work <span className="thinker"><Image src="/figma/thinker.png" alt="" fill sizes="90px" /></span></h2>
+            <div className="about-actions">
+              <a className="pill-link" href="#process">How We Work <span aria-hidden="true">↗</span></a>
+              <a className="text-link" href="#services">Our Services <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
-        </div>
-        <p className="hero-index" aria-hidden="true">01 / 07 · 2026</p>
-      </section>
-      </div>
+        </section>
 
-      <section id="manifesto" className="manifesto section-rule" aria-labelledby="manifesto-heading">
-        <div className="section-label"><span>01</span><span>Philosophy</span></div>
-        <div className="manifesto-copy">
-          <h2 id="manifesto-heading">Art meets<br /><em>technology.</em></h2>
-          <p className="quote">“Great design should be remembered. Great systems should be invisible.”</p>
-          <p className="lede">
-            We believe technology should amplify craftsmanship, not replace it. Every project begins with a blank canvas and ends with something useful, distinctive, and built to last.
-          </p>
-        </div>
-      </section>
+        <FeaturedWork />
 
-      <section id="work" className="work section-rule" aria-labelledby="work-heading">
-        <div className="section-label"><span>02</span><span>Selected work</span></div>
-        <div className="section-content">
-          <div className="section-intro">
-            <h2 id="work-heading">A living<br /><em>archive.</em></h2>
-            <p className="lede">Concept studies and commissioned work, documented as the studio grows.</p>
-          </div>
-          <div className="project-list">
-            {projects.map((project) => (
-              <article className="project-card" key={project.number}>
-                <div className="project-art">
-                  <Image
-                    className="project-art-image"
-                    src={project.asset}
-                    alt={project.alt}
-                    fill
-                    sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 30vw"
-                  />
-                  <span>Concept<br />archive</span>
-                  <small>{project.number}</small>
-                </div>
-                <div className="project-meta"><span>{project.category}</span><span>{project.year}</span></div>
-                <h3>{project.title}</h3>
-                <p>{project.summary}</p>
-                <span className="card-link">View study <span aria-hidden="true">↗</span></span>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="craft" className="craft section-rule" aria-labelledby="craft-heading">
-        <div className="section-label"><span>03</span><span>Our craft</span></div>
-        <div className="section-content">
-          <div className="section-intro">
-            <h2 id="craft-heading">Made with<br /><em>intention.</em></h2>
-            <p className="lede">A small set of disciplines, brought together with care.</p>
+        <section id="services" className="services-section section-space" aria-labelledby="services-heading" data-figma-node="13:1038">
+          <div className="section-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <a className="pill-link" href="#contact">Let’s talk services <span aria-hidden="true">↗</span></a>
           </div>
           <div className="service-list">
             {services.map((service) => (
-              <article className="service-row" key={service.number}>
-                <span className="service-number">{service.number}</span>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-                <span className="service-arrow" aria-hidden="true">↗</span>
-              </article>
+              <details className="service-item" key={service.number}>
+                <summary><span>{service.title}</span><span className="service-symbol" aria-hidden="true">↗</span></summary>
+                <div className="service-description"><p>{service.description}</p><a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Discuss this service <span aria-hidden="true">↗</span></a></div>
+              </details>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="updates" className="updates section-rule" aria-labelledby="updates-heading">
-        <div className="section-label"><span>04</span><span>Latest updates</span></div>
-        <div className="section-content">
-          <div className="section-intro">
-            <h2 id="updates-heading">The studio<br /><em>in motion.</em></h2>
-            <p className="lede">A timeline of projects, experiments, and decisions as they happen.</p>
+        <section className="studio-marquee" aria-label="Designing for Humans. Automating the Rest." data-figma-node="13:1259">
+          <div className="marquee-track" aria-hidden="true">
+            {[0, 1].map((copy) => <div className="marquee-group" key={copy}>
+              <span>Designing for Humans</span>
+              <Image src="/team/studio-marquee.jpg" alt="" width={210} height={210} sizes="(max-width: 700px) 72px, 210px" />
+              <span>Automating the Rest</span>
+              <Image className="marquee-logo" src="/brand/conqueror-studio.svg" alt="" width={970} height={288} sizes="(max-width: 700px) 72px, 210px" />
+            </div>)}
           </div>
-          <div className="update-list">
-            {updates.map((update) => (
-              <article className="update-row" key={update.date + update.title}>
-                <time>{update.date}</time>
-                <div><p className="eyebrow">{update.type}</p><h3>{update.title}</h3><p>{update.note}</p></div>
-                <span aria-hidden="true">↗</span>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="journal" className="journal section-rule" aria-labelledby="journal-heading">
-        <div className="section-label"><span>05</span><span>Journal</span></div>
-        <div className="section-content">
-          <div className="section-intro">
-            <h2 id="journal-heading">Notes from<br /><em>the atelier.</em></h2>
-            <p className="lede">Thoughts on digital presence, thoughtful design, and invisible systems.</p>
-          </div>
-          <div className="journal-grid">
-            {journal.map((entry) => (
-              <article className="journal-card" key={entry.number}>
-                <div className="journal-card-top"><span>{entry.number}</span><span>{entry.category}</span></div>
-                <h3>{entry.title}</h3>
-                <p>{entry.excerpt}</p>
-                <span className="card-link">Read note <span aria-hidden="true">↗</span></span>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+        <TeamStory />
 
-      <section id="industries" className="industries section-rule" aria-labelledby="industries-heading">
-        <div className="section-label"><span>06</span><span>Industries</span></div>
-        <div className="section-content industry-content">
-          <div className="section-intro">
-            <h2 id="industries-heading">Brands we<br /><em>create for.</em></h2>
-            <p className="lede">Focused digital direction for people building something worth remembering.</p>
-          </div>
-          <div className="industry-list">
-            {industries.map((industry, index) => (
-              <div className="industry-item" key={industry}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <h3>{industry}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        <section id="process" className="process-section section-space" aria-labelledby="process-heading">
+          <details className="process-disclosure">
+            <summary><h2 id="process-heading">How We Work</h2><span aria-hidden="true">+</span></summary>
+            <ol>{process.map((step) => <li key={step.number}><span>{step.number}</span><h3>{step.title}</h3><p>{step.description}</p></li>)}</ol>
+          </details>
+        </section>
+        <PricingSection contactUrl={whatsappUrl} />
+        <FaqSection />
+        <ClosingInvitation />
+      </main>
 
-      <section id="process" className="process section-rule" aria-labelledby="process-heading">
-        <div className="section-label"><span>07</span><span>Process</span></div>
-        <div className="section-content">
-          <div className="section-intro">
-            <h2 id="process-heading">From blank canvas<br /><em>to launch.</em></h2>
-            <p className="lede">A clear, collaborative path from first conversation to a living digital presence.</p>
+      <footer id="contact" className="site-footer" aria-labelledby="contact-heading" data-figma-node="87:228">
+        <div className="footer-top">
+          <div className="footer-contact">
+            <h2 id="contact-heading">Let’s create your next chapter.</h2>
+            <a className="contact-pill" href={whatsappUrl} target="_blank" rel="noreferrer">Start on WhatsApp <span aria-hidden="true">↗</span></a>
+            <a className="footer-email" href={emailUrl}>conqueror.agency404@gmail.com</a>
+            <div className="social-links"><a href="https://instagram.com/conqueror.404" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a><a href={emailUrl}>Email <span aria-hidden="true">↗</span></a></div>
           </div>
-          <div className="process-list">
-            {process.map((step, index) => (
-              <article className="process-item" key={step.number}>
-                <div className="process-top"><span>{step.number}</span>{index < process.length - 1 && <span aria-hidden="true">→</span>}</div>
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
-              </article>
-            ))}
-          </div>
+          <nav className="footer-nav" aria-label="Footer navigation">
+            <div><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a></div>
+            <div><a href="#team">Our Team</a><a href="#process">How We Work</a><a href="#pricing">Pricing</a></div>
+            <div><span>Sukabumi</span><a href={emailUrl}>Contact <span aria-hidden="true">↗</span></a></div>
+          </nav>
         </div>
-      </section>
-
-      <section id="contact" className="contact" aria-labelledby="contact-heading">
-        <p className="eyebrow">08 / Begin a project</p>
-        <h2 id="contact-heading">Your vision deserves<br /><em>a digital masterpiece.</em></h2>
-        <p className="lede">Tell us what you are building. We will help you find the clearest next step.</p>
-        <a className="button button-light" href={whatsappUrl} target="_blank" rel="noreferrer">
-          Free consultation <span aria-hidden="true">↗</span>
-        </a>
-      </section>
-
-      <footer className="site-footer">
-        <div>
-          <p className="wordmark">
-            <Image className="logo-image" src="/brand/conqueror-logo.svg" alt="Conqueror Studio" width={270} height={72} />
-          </p>
-          <p className="footer-note">Crafted in Indonesia.<br />Inspired by Renaissance.<br />Powered by Technology.</p>
-        </div>
-        <div className="footer-links">
-          <a href="mailto:conqueror.agency404@gmail.com">Email</a>
-          <a href="https://instagram.com/conqueror.404" target="_blank" rel="noreferrer">Instagram</a>
-          <a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp</a>
-        </div>
-        <p className="footer-note">© 2026 Conqueror Studio</p>
+        <FooterLogoPuzzle />
+        <div className="footer-bottom"><span>© 2026 Conqueror Studio. All rights reserved</span><span>Website MadeByConqueror</span></div>
       </footer>
-    </main>
+    </>
   );
 }

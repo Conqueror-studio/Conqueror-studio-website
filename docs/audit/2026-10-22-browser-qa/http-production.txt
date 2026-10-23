@@ -1,0 +1,29 @@
+{
+  "Status": 200,
+  "Headers": {
+    "X-Frame-Options": [
+      "DENY"
+    ],
+    "X-Powered-By": null,
+    "Content-Security-Policy": [
+      "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'none'"
+    ],
+    "Permissions-Policy": [
+      "camera=(), microphone=(), geolocation=(), payment=()"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ]
+  },
+  "Noindex": true
+}
+User-Agent: *
+Disallow: /
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+</urlset>

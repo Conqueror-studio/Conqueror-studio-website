@@ -1,0 +1,167 @@
+{
+  "timestampJakarta": "2026-10-22 21:38",
+  "scope": "Website Conqueror Studio local checkout and local production runtime only",
+  "branch": "agent/upgrade-v1.1",
+  "commit": "46554a03dbda44e507db76db0e310420e15fc8d6",
+  "test": {
+    "exitCode": 0,
+    "pass": 22,
+    "fail": 0
+  },
+  "lint": {
+    "exitCode": 0,
+    "files": 25,
+    "errors": 0,
+    "warnings": 0,
+    "faqRules": 113,
+    "command": "eslint . --max-warnings=0"
+  },
+  "typecheck": {
+    "command": "npx --no-install tsc --noEmit --incremental false",
+    "exitCode": 0
+  },
+  "build": {
+    "exitCode": 0,
+    "routeFirstLoadJS": "117 kB",
+    "routes": [
+      "/",
+      "/_not-found",
+      "/robots.txt",
+      "/sitemap.xml"
+    ]
+  },
+  "auditProduction": {
+    "exitCode": 0,
+    "total": 0
+  },
+  "auditAll": {
+    "exitCode": 1,
+    "high": 5,
+    "critical": 0,
+    "uniqueRootAdvisory": "GHSA-vfj7-8cjw-p6xm",
+    "rootPackage": "braces@3.0.3",
+    "scope": "development/lint dependency chain"
+  },
+  "secretScan": {
+    "method": "six high-confidence regex families; no matched values printed",
+    "textFiles": 51,
+    "matches": 0,
+    "historyScanned": false
+  },
+  "svgScan": {
+    "files": 16,
+    "suspiciousPatternMatches": 0
+  },
+  "assets": {
+    "publicFiles": 51,
+    "httpHeadFailures": 0,
+    "totalBytes": 18001826,
+    "literalSourceAssetPathsChecked": 25
+  },
+  "contacts": {
+    "whatsappLinks": 9,
+    "emailLinks": 3,
+    "allExpectedTargets": true,
+    "sendOrReceiptTested": false
+  },
+  "externalPortfolios": {
+    "method": "direct HTTPS GET after web tool inaccessible",
+    "results": [
+      {
+        "url": "https://historiamoment.vercel.app/",
+        "status": 200
+      },
+      {
+        "url": "https://icacilla-makeup-website.vercel.app/",
+        "status": 200
+      },
+      {
+        "url": "https://basmara-wedding.vercel.app/",
+        "status": 200
+      }
+    ]
+  },
+  "runtime": {
+    "environment": "Next.js production build, temporary loopback-only 127.0.0.1:3101",
+    "desktop": "1280x720",
+    "mobile": [
+      "390x844 (reported innerHeight845)",
+      "320x760"
+    ],
+    "faqOpenCloseAllSix": true,
+    "menuEscapeAndPricingPassed": true,
+    "puzzleSwapAndResetPassed": true,
+    "overflowAtCheckedSizes": false,
+    "brokenLoadedImagesObserved": 0,
+    "consoleWarningsOrErrorsObserved": 0,
+    "video": {
+      "variant": 5,
+      "src": "/hero/motion-02.mp4",
+      "readyState": 4,
+      "muted": true,
+      "controls": false,
+      "playing": true,
+      "timeAdvanced": true
+    },
+    "deepLinkFinding": {
+      "freshUrl": "http://127.0.0.1:3101/#faq",
+      "faqTopPx": 2106.803955078125,
+      "visibleSection": "end of Team / How We Work",
+      "rootCause": "layout changes when scroll enhancements enable; inference from source and runtime"
+    },
+    "keyboardFinding": {
+      "ariaHiddenProjectLinksTabIndex": 0,
+      "focusReachedHiddenPanel": "project-panel-1"
+    },
+    "securityResponses": {
+      "rootStatus": 200,
+      "envStatus": 404,
+      "gitHeadStatus": 404,
+      "packageJsonStatus": 404,
+      "apiStatus": 404,
+      "remoteImageProbeStatus": 400
+    },
+    "missingHeadersInLocalProduction": [
+      "Content-Security-Policy",
+      "X-Frame-Options",
+      "X-Content-Type-Options",
+      "Referrer-Policy",
+      "Permissions-Policy"
+    ],
+    "seo": {
+      "robotsSitemap": "http://localhost:3000/sitemap.xml",
+      "sitemapLocation": "http://localhost:3000",
+      "deploymentEnvironmentVerified": false
+    }
+  },
+  "implementationChanged": false,
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "graph": {
+    "generation": "2026-10-04T09:06:45Z",
+    "nodes": 2,
+    "nestedRepositoryPathsTracked": false,
+    "fallback": "direct source/config/test reads, asset scans and bounded runtime checks"
+  },
+  "auditRuntimeCleanup": {
+    "temporaryServerStopped": true,
+    "mainPreviewStatus": 200,
+    "viewportRestored": true
+  },
+  "checkpointSync": {
+    "success": false,
+    "error": "HTTP 429",
+    "remoteHandoffVerified": false
+  },
+  "notRun": [
+    "Dedicated SAST/pentest",
+    "Git history secret scan",
+    "clean install / Linux Node22 CI",
+    "physical mobile / Safari / Firefox",
+    "full motion-preference runtime emulation",
+    "Lighthouse/Core Web Vitals",
+    "TLS/HSTS/WAF/hosting or deployed runtime",
+    "Billing Core/PT.SSS/database security"
+  ]
+}

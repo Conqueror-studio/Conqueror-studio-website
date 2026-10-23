@@ -1,0 +1,21 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "McpServerError: MCP SSE probe returned 429 from openai.org"
+    }
+  ],
+  "structuredContent": {
+    "error": "McpServerError: MCP SSE probe returned 429 from openai.org",
+    "error_code": "UNAVAILABLE",
+    "error_data": {
+      "type": "invalid_mcp_response",
+      "message": "MCP SSE probe returned 429 from openai.org",
+      "level": "error",
+      "url": "https://tunnel-service.gateway.unified-0.internal.api.openai.org/v1/mcp/tunnel_6ac394c60020819180266188d4827abd",
+      "status_code": 429,
+      "content_type": "application/json"
+    }
+  },
+  "isError": true
+}

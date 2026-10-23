@@ -1,0 +1,6 @@
+Evidence key: guard-main-typecheck-final
+Exit code: 0
+
+> conqueror-studio-website@0.1.0 typecheck
+> tsc --noEmit --incremental false
+

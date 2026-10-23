@@ -64,18 +64,18 @@ export const projects: Project[] = [
 export const services = [
   {
     number: '01',
-    title: 'Digital Architecture',
-    description: 'Editorial websites and landing pages crafted to make a business legible, memorable, and trusted.',
+    title: 'Website Design & Development',
+    description: 'Clear, distinctive websites that make a business easier to understand, trust, and contact.',
   },
   {
     number: '02',
-    title: 'Intelligent Systems',
-    description: 'Quiet automation systems that reduce repetitive work behind the customer experience.',
+    title: 'Workflow Automation',
+    description: 'Practical systems that reduce repetitive work and keep delivery moving after launch.',
   },
   {
     number: '03',
-    title: 'Brand Experience',
-    description: 'A considered digital direction connecting story, visual language, and practical growth.',
+    title: 'Tool Integration',
+    description: 'Thoughtful connections between the tools your team already uses, without adding unnecessary complexity.',
   },
 ];
 

@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-22",
+  "timezone": "Asia/Jakarta",
+  "environment": "Local production Next.js, http://127.0.0.1:3101, not deployed",
+  "browser": "ChatGPT in-app Chromium",
+  "changesThisRun": "No application code changed; verification and evidence only",
+  "anchors": [
+    {"case":"desktop FAQ fresh load", "width":1280, "height":720, "targetTop":24.076704025268555, "motionSections":4, "horizontalOverflow":false},
+    {"case":"desktop FAQ reload settled", "width":1280, "height":720, "targetTop":24.076704025268555, "motionSections":4, "horizontalOverflow":false},
+    {"case":"desktop Pricing reload settled", "width":1280, "height":720, "targetTop":23.821022033691406, "motionSections":4},
+    {"case":"desktop Contact reload settled", "width":1280, "height":720, "targetTop":24.261362075805664, "motionSections":4},
+    {"case":"mobile FAQ reload settled", "width":390, "height":845, "targetTop":23.77840805053711, "motionSections":4, "horizontalOverflow":false},
+    {"case":"mobile Pricing reload settled", "width":390, "height":845, "targetTop":23.877840042114254, "motionSections":4, "horizontalOverflow":false},
+    {"case":"mobile Contact reload settled", "width":390, "height":845, "targetTop":34.53125, "motionSections":4, "horizontalOverflow":false, "headerHidden":true}
+  ],
+  "samplingCaveat": "Initial samples taken immediately after reload were before hydration/alignment: FAQ top 7486.59 with 0 motion sections; Pricing top 5989.0625 with 0 motion sections; Contact top 11973.3515625 before initial alignment settled. A networkidle wait did not establish hydrated layout. Final settled samples above were separately observed; no immediate-sample PASS was claimed.",
+  "desktopKeyboard": [
+    {"action":"Tab from active project name", "focused":"project-panel-0", "hiddenAncestor":false},
+    {"action":"Tab from active panel", "focused":"project-panel-0 anchor", "hiddenAncestor":false},
+    {"action":"Tab after active card", "focused":"Discuss your project CTA", "hiddenAncestor":false},
+    {"action":"ArrowDown", "focused":"project-tab-1", "activePanel":"project-panel-1", "otherPanelsInert":true},
+    {"action":"End", "focused":"project-tab-2", "activePanel":"project-panel-2", "otherPanelsInert":true}
+  ],
+  "mobileKeyboard": [
+    {"action":"Tab from active project name", "focused":"project-panel-0", "hiddenAncestor":false},
+    {"action":"Tab from active panel", "focused":"project-panel-0 anchor", "hiddenAncestor":false},
+    {"action":"Tab after active card", "focused":"Discuss your project CTA", "hiddenAncestor":false},
+    {"action":"ArrowDown", "focused":"project-tab-1", "activePanel":"project-panel-1"}
+  ],
+  "faq": {"count":6, "allOpenedWithEnter":true, "eachClosedAgainWithEnter":true, "answerLengths":[181,293,194,316,269,606]},
+  "mobileMenu": {"opened":true,"links":6,"escapeClosed":true},
+  "landscape": {"requestedWidth":844,"actualWidth":845,"height":390,"horizontalOverflow":false,"workMotionEnabled":false,"inertWorkPanels":0},
+  "puzzle": {"eightTiles":true,"twoClicksIncrementToOneMove":true,"intactLogoRestored":true,"logoLoaded":true,"focusReturnedToPlayButton":true},
+  "puzzleToolCaveat": "First Mainkan puzzle click reported a locator deadline/no matches; inspection showed the puzzle was already active with 8 tiles and 0 moves. Continued from that observed state without clicking Play again.",
+  "productionConsole": {"warnings":[],"errors":[]},
+  "heroSmoke": {"viewport":"1280x720","motionSections":4,"brokenCompletedImages":[],"robots":"noindex, nofollow","videoElements":0},
+  "screenshots": ["../2026-10-22-hardening/faq-desktop-browser.png","../2026-10-22-hardening/hero-desktop-browser.png"],
+  "limitations": ["Mobile screenshot capture failed twice; no mobile screenshot evidence claimed", "Reduced-motion browser emulation unavailable in advertised browser capabilities; NOT RUN", "Hero happened to show an image; video playback under the new CSP NOT EXERCISED", "Actual mobile hardware, Safari, Firefox, screen reader, hosted Vercel runtime and remote CI NOT VERIFIED"],
+  "cleanup": "Temporary viewport reset; production server stopped; main development preview on 127.0.0.1:3001 kept running and displayed. No commit/push/deployment."
+}

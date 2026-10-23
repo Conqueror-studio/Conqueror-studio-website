@@ -1,0 +1,4 @@
+Evidence key: guard-main-install
+Exit code: 0
+
+removed 15 packages, and changed 1 package in 3s

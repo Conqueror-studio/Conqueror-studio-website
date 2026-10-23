@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "tool call error: tool call failed for `codebase-memory-mcp/check_index_coverage`\n\nCaused by:\n    Transport closed"
+    }
+  ],
+  "isError": true
+}

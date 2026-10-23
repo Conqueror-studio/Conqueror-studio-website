@@ -1,0 +1,16 @@
+Evidence key: guard-main-resolution-final
+Exit code: 0
+conqueror-studio-website@0.1.0 D:\File Syahdan\Area 666 Conqueror Studio\Web Conqueror\website-repo
+├─┬ eslint-config-next@16.3.1
+│ └─┬ @next/eslint-plugin-next@16.3.1 overridden
+│   └── fast-glob@npm:@conqueror/next-root-guard@0.1.0 -> .\tooling\next-root-guard
+├─┬ next@15.5.28
+│ ├── postcss@8.5.23 overridden
+│ ├── react-dom@19.1.2 deduped
+│ ├── react@19.1.2 deduped
+│ └─┬ styled-jsx@5.1.6
+│   └── react@19.1.2 deduped
+├─┬ react-dom@19.1.2
+│ └── react@19.1.2 deduped
+└── react@19.1.2
+

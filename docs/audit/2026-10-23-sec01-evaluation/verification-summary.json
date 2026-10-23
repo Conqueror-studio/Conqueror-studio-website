@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-10-23 17:55 Asia/Jakarta",
+  "actualProject": {
+    "branch": "agent/upgrade-v1.1",
+    "head": "46554a03dbda44e507db76db0e310420e15fc8d6",
+    "test": {
+      "exit": 0,
+      "pass": 35,
+      "fail": 0
+    },
+    "lint": 0,
+    "typecheck": 0,
+    "build": 0,
+    "auditProduction": {
+      "exit": 0,
+      "total": 0
+    },
+    "auditFull": {
+      "exit": 1,
+      "high": 5,
+      "critical": 0
+    },
+    "sourceHashes": {
+      "files": 32,
+      "unchanged": true
+    }
+  },
+  "evaluations": {
+    "latestOfficialPlugin": {
+      "version": "16.4.2",
+      "dependsOnFastGlob": "3.3.1",
+      "bracesLatest": "3.0.3",
+      "advisoryPatchedVersion": "None"
+    },
+    "downgrade": {
+      "version": "14.2.35",
+      "lockOnly": true,
+      "legacyPeerDeps": true,
+      "installedInMain": false,
+      "auditHigh": 3,
+      "oldNextRules": 21,
+      "currentNextRules": 22,
+      "missingRule": "no-location-assign-relative-destination",
+      "eslintPeerRange": "^7.23.0 || ^8.0.0"
+    },
+    "minimalTinyglobbyAlias": {
+      "version": "0.2.17",
+      "projectGraph": false,
+      "installedInMain": false,
+      "auditTotal": 0,
+      "defaultCompatibility": {
+        "pass": 2,
+        "fail": 5
+      },
+      "expandDirectoriesFalse": {
+        "pass": 5,
+        "fail": 2
+      },
+      "rejected": true
+    }
+  },
+  "status": "IN PROGRESS / SEC-01 OPEN: no equivalent safe drop-in established among evaluated candidates",
+  "boundaries": [
+    "No app/toolchain production change; only evaluation docs/evidence added to repository.",
+    "Temporary probe code is throwaway, not production implementation.",
+    "No malicious payload, forced main install, new waiver, commit, push, deployment, database/Notion/CEO mutation.",
+    "Fresh project npm ci, candidate full website CI/browser, Linux/Node22 and deployment checks NOT RUN."
+  ],
+  "scratch": "C:/Users/HP/AppData/Local/Temp/conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac"
+}

@@ -1,0 +1,149 @@
+Exit code: 1
+
+✔ candidate must preserve Next root helper behavior: default roots (7.8195ms)
+✖ candidate must preserve Next root helper behavior: literal directory (32.7035ms)
+✔ candidate must preserve Next root helper behavior: single-level wildcard (7.8108ms)
+✖ candidate must preserve Next root helper behavior: absolute literal directory (5.7003ms)
+✖ candidate must preserve Next root helper behavior: zero-padded brace range (8.3621ms)
+✖ candidate must preserve Next root helper behavior: stepped brace range (5.3151ms)
+✖ candidate must preserve Next root helper behavior: array of directories (5.934ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 2
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 532.5397
+
+✖ failing tests:
+
+test at compatibility.test.cjs:23:3
+✖ candidate must preserve Next root helper behavior: literal directory (32.7035ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web',
+  +   'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web\\pages'
+    ]
+  
+      at TestContext.<anonymous> (C:\Users\HP\AppData\Local\Temp\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\compatibility.test.cjs:25:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web\\pages' ],
+    expected: [ 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at compatibility.test.cjs:23:3
+✖ candidate must preserve Next root helper behavior: absolute literal directory (5.7003ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web',
+  +   'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web\\pages'
+    ]
+  
+      at TestContext.<anonymous> (C:\Users\HP\AppData\Local\Temp\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\compatibility.test.cjs:25:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web\\pages' ],
+    expected: [ 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at compatibility.test.cjs:23:3
+✖ candidate must preserve Next root helper behavior: zero-padded brace range (8.3621ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + []
+  - [
+  -   'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\01',
+  -   'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\02',
+  -   'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\03'
+  - ]
+  
+      at TestContext.<anonymous> (C:\Users\HP\AppData\Local\Temp\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\compatibility.test.cjs:25:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [],
+    expected: [ 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\01', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\02', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\03' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at compatibility.test.cjs:23:3
+✖ candidate must preserve Next root helper behavior: stepped brace range (5.3151ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\1',
+  -   'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\3',
+      'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\5'
+    ]
+  
+      at TestContext.<anonymous> (C:\Users\HP\AppData\Local\Temp\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\compatibility.test.cjs:25:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\1', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\5' ],
+    expected: [ 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\1', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\3', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\5' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at compatibility.test.cjs:23:3
+✖ candidate must preserve Next root helper behavior: array of directories (5.934ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\shop',
+  +   'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\shop\\pages',
+      'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web',
+  +   'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web\\pages'
+    ]
+  
+      at TestContext.<anonymous> (C:\Users\HP\AppData\Local\Temp\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\compatibility.test.cjs:25:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\shop', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\shop\\pages', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web\\pages' ],
+    expected: [ 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\shop', 'C:\\Users\\HP\\AppData\\Local\\Temp\\conqueror-sec01-eval-42b0f509110444609b20a69de3c01bac\\fixture\\apps\\web' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

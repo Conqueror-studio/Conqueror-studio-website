@@ -1,0 +1,38 @@
+Command: npm test
+Exit code: 0
+
+
+> conqueror-studio-website@0.1.0 test
+> node --test
+
+✔ a shuffled logo contains each original piece exactly once and is not already solved (74.5454ms)
+✔ identity shuffle still produces a playable board (0.2903ms)
+✔ swapping is immutable, reversible, and rejects invalid slot indices (16.5405ms)
+✔ brand SVG retains its natural ratio and contains no background or external content (9.7092ms)
+✔ rendered logo has transparent letter counters and a flower cutout within the white badge (38.4525ms)
+✔ header and footer use the same proportionate SVG with responsive image sizing (4.2571ms)
+✔ scroll stages clamp safely before, within and after the pinned area (69.6146ms)
+✔ CEO hero media, video posters and team references are available locally (39.7182ms)
+✔ hero selects once per visit and shares its poster between background and cameo (5.4983ms)
+✔ hero and studio running text omit manual pause controls while retaining motion safeguards (20.8138ms)
+✔ scroll enhancements have cleanup, motion preference and manual alternatives (47.9558ms)
+✔ team retains scroll-driven cards without numbered navigation (3.125ms)
+✔ featured work uses mobile scroll motion, clickable names, and no bottom controls (20.212ms)
+✔ featured projects link to their live sites using local hero assets (7.0043ms)
+✔ homepage retains every navigation destination (33.3172ms)
+✔ FAQ scopes the nine exclusions to basic website pricing after Pricing and before the closing (4.3406ms)
+✔ FAQ adds the five approved general questions without replacing the existing scope answer (2.884ms)
+✔ commercial contact actions and the three services remain available (18.2052ms)
+✔ Figma artwork and fonts are durable, non-empty local assets (41.5295ms)
+✔ interactive controls expose keyboard and reduced-motion support (3.4288ms)
+✔ production builds cannot overwrite the running preview cache (0.8618ms)
+✔ manifest pins exact OS dependency versions (2.0766ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 982.6364
+

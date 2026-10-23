@@ -1,5 +1,8 @@
 import type { MetadataRoute } from 'next';
+import { getSiteConfig } from '../lib/site-config.mjs';
 export default function robots(): MetadataRoute.Robots {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
-  return { rules: { userAgent: '*', allow: '/' }, sitemap: base + '/sitemap.xml' };
+  const site = getSiteConfig();
+  return site.indexable
+    ? { rules: { userAgent: '*', allow: '/' }, sitemap: site.url + '/sitemap.xml' }
+    : { rules: { userAgent: '*', disallow: '/' } };
 }

@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Jakarta",
+  "scope": "Documentation/design only; no new package, config or source implementation",
+  "branch": "agent/upgrade-v1.1",
+  "head": "46554a03dbda44e507db76db0e310420e15fc8d6",
+  "lintProbe": {
+    "command": "ESLint.lintFiles([\".\"]) + calculateConfigForFile",
+    "exit": 0,
+    "files": 31,
+    "errors": 0,
+    "warnings": 0,
+    "profiles": [
+      {
+        "id": 1,
+        "enabledNextRules": 22,
+        "enabledRules": 82,
+        "rootDirPresent": false
+      },
+      {
+        "id": 2,
+        "enabledNextRules": 22,
+        "enabledRules": 86,
+        "rootDirPresent": false
+      }
+    ]
+  },
+  "notRun": {
+    "tests": "Design-only; no code/config change",
+    "typecheck": "Design-only; no code/config change",
+    "build": "Design-only; no code/config change",
+    "audit": "Not rerun; last evaluation records5high/full and0production",
+    "guardImplementationTests": "Not implemented/approved",
+    "cleanInstall": "No new package/lock changes; not authorized for this design-only step",
+    "browserAndRemoteCI": "No runtime change; NOT RUN; no push/deployment"
+  },
+  "previousResultsOnly": "docs/audit/2026-10-23-sec01-evaluation/verification-summary.json",
+  "sourceHashComparison": {
+    "count": 32,
+    "unchanged": true
+  },
+  "diffCheckExit": 0,
+  "status": "DRAFT ready for CTO review, implementation NOT STARTED, SEC-01 OPEN"
+}

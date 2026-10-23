@@ -1,0 +1,910 @@
+{
+  "schema": 1,
+  "capturedFor": "SEC-01 design only; baseline on original installed toolchain",
+  "files": [
+    {
+      "path": "eslint.config.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "next.config.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/app/not-found.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/app/page.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/app/robots.ts",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/closing-invitation.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/faq-section.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/featured-work.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/footer-logo-puzzle.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/hero-experience.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/initial-anchor.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/pricing-section.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/studio-navigation.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/studio-story.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/team-story.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/tools-marquee.tsx",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/components/use-scroll-stage.ts",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/lib/content.ts",
+      "profile": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/lib/initial-anchor.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/lib/logo-puzzle.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/lib/motion-math.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "src/lib/site-config.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "tests/initial-anchor.test.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "tests/logo-puzzle.test.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "tests/logo.test.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "tests/motion.test.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "tests/release-hardening.test.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "tests/smoke.test.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "path": "tests/toolchain-security.test.mjs",
+      "profile": 1,
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "fingerprint": "dbf0b7653da34a8e8b1be22a4120a76188ce734aeebda058a57d5dea3fe296a7",
+      "enabledNextRules": 22,
+      "enabledRules": 82,
+      "rules": {
+        "@next/next/google-font-display": [
+          1
+        ],
+        "@next/next/google-font-preconnect": [
+          1
+        ],
+        "@next/next/inline-script-id": [
+          2
+        ],
+        "@next/next/next-script-for-ga": [
+          1
+        ],
+        "@next/next/no-assign-module-variable": [
+          2
+        ],
+        "@next/next/no-async-client-component": [
+          1
+        ],
+        "@next/next/no-before-interactive-script-outside-document": [
+          1
+        ],
+        "@next/next/no-css-tags": [
+          1
+        ],
+        "@next/next/no-document-import-in-page": [
+          2
+        ],
+        "@next/next/no-duplicate-head": [
+          2
+        ],
+        "@next/next/no-head-element": [
+          1
+        ],
+        "@next/next/no-head-import-in-document": [
+          2
+        ],
+        "@next/next/no-html-link-for-pages": [
+          2
+        ],
+        "@next/next/no-img-element": [
+          1
+        ],
+        "@next/next/no-location-assign-relative-destination": [
+          1
+        ],
+        "@next/next/no-page-custom-font": [
+          1
+        ],
+        "@next/next/no-script-component-in-head": [
+          2
+        ],
+        "@next/next/no-styled-jsx-in-document": [
+          1
+        ],
+        "@next/next/no-sync-scripts": [
+          2
+        ],
+        "@next/next/no-title-in-document-head": [
+          1
+        ],
+        "@next/next/no-typos": [
+          1
+        ],
+        "@next/next/no-unwanted-polyfillio": [
+          1
+        ],
+        "@typescript-eslint/ban-ts-comment": [
+          2
+        ],
+        "@typescript-eslint/no-array-constructor": [
+          2
+        ],
+        "@typescript-eslint/no-duplicate-enum-values": [
+          2
+        ],
+        "@typescript-eslint/no-empty-object-type": [
+          2
+        ],
+        "@typescript-eslint/no-explicit-any": [
+          2
+        ],
+        "@typescript-eslint/no-extra-non-null-assertion": [
+          2
+        ],
+        "@typescript-eslint/no-misused-new": [
+          2
+        ],
+        "@typescript-eslint/no-namespace": [
+          2
+        ],
+        "@typescript-eslint/no-non-null-asserted-optional-chain": [
+          2
+        ],
+        "@typescript-eslint/no-require-imports": [
+          2
+        ],
+        "@typescript-eslint/no-this-alias": [
+          2
+        ],
+        "@typescript-eslint/no-unnecessary-type-constraint": [
+          2
+        ],
+        "@typescript-eslint/no-unsafe-declaration-merging": [
+          2
+        ],
+        "@typescript-eslint/no-unsafe-function-type": [
+          2
+        ],
+        "@typescript-eslint/no-unused-expressions": [
+          1,
+          {
+            "allowShortCircuit": false,
+            "allowTaggedTemplates": false,
+            "allowTernary": false
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          1
+        ],
+        "@typescript-eslint/no-wrapper-object-types": [
+          2
+        ],
+        "@typescript-eslint/prefer-as-const": [
+          2
+        ],
+        "@typescript-eslint/prefer-namespace-keyword": [
+          2
+        ],
+        "@typescript-eslint/triple-slash-reference": [
+          2
+        ],
+        "import/no-anonymous-default-export": [
+          1
+        ],
+        "jsx-a11y/alt-text": [
+          1,
+          {
+            "elements": [
+              "img"
+            ],
+            "img": [
+              "Image"
+            ]
+          }
+        ],
+        "jsx-a11y/aria-props": [
+          1
+        ],
+        "jsx-a11y/aria-proptypes": [
+          1
+        ],
+        "jsx-a11y/aria-unsupported-elements": [
+          1
+        ],
+        "jsx-a11y/role-has-required-aria-props": [
+          1
+        ],
+        "jsx-a11y/role-supports-aria-props": [
+          1
+        ],
+        "no-array-constructor": [
+          0
+        ],
+        "no-unused-expressions": [
+          0,
+          {
+            "allowShortCircuit": false,
+            "allowTernary": false,
+            "allowTaggedTemplates": false,
+            "enforceForJSX": false,
+            "ignoreDirectives": false
+          }
+        ],
+        "no-unused-vars": [
+          0
+        ],
+        "react-hooks/config": [
+          2
+        ],
+        "react-hooks/error-boundaries": [
+          2
+        ],
+        "react-hooks/exhaustive-deps": [
+          1
+        ],
+        "react-hooks/gating": [
+          2
+        ],
+        "react-hooks/globals": [
+          2
+        ],
+        "react-hooks/immutability": [
+          2
+        ],
+        "react-hooks/incompatible-library": [
+          1
+        ],
+        "react-hooks/preserve-manual-memoization": [
+          2
+        ],
+        "react-hooks/purity": [
+          2
+        ],
+        "react-hooks/refs": [
+          2
+        ],
+        "react-hooks/rules-of-hooks": [
+          2
+        ],
+        "react-hooks/set-state-in-effect": [
+          2
+        ],
+        "react-hooks/set-state-in-render": [
+          2
+        ],
+        "react-hooks/static-components": [
+          2
+        ],
+        "react-hooks/unsupported-syntax": [
+          1
+        ],
+        "react-hooks/use-memo": [
+          2
+        ],
+        "react/display-name": [
+          2
+        ],
+        "react/jsx-key": [
+          2
+        ],
+        "react/jsx-no-comment-textnodes": [
+          2
+        ],
+        "react/jsx-no-duplicate-props": [
+          2
+        ],
+        "react/jsx-no-target-blank": [
+          0
+        ],
+        "react/jsx-no-undef": [
+          2
+        ],
+        "react/jsx-uses-react": [
+          2
+        ],
+        "react/jsx-uses-vars": [
+          2
+        ],
+        "react/no-children-prop": [
+          2
+        ],
+        "react/no-danger-with-children": [
+          2
+        ],
+        "react/no-deprecated": [
+          2
+        ],
+        "react/no-direct-mutation-state": [
+          2
+        ],
+        "react/no-find-dom-node": [
+          2
+        ],
+        "react/no-is-mounted": [
+          2
+        ],
+        "react/no-render-return-value": [
+          2
+        ],
+        "react/no-string-refs": [
+          2
+        ],
+        "react/no-unescaped-entities": [
+          2
+        ],
+        "react/no-unknown-property": [
+          0
+        ],
+        "react/no-unsafe": [
+          0
+        ],
+        "react/prop-types": [
+          0
+        ],
+        "react/react-in-jsx-scope": [
+          0
+        ],
+        "react/require-render-return": [
+          2
+        ]
+      },
+      "parser": {
+        "name": "typescript-eslint/parser",
+        "version": "8.67.0"
+      },
+      "ecmaVersion": 2026,
+      "sourceType": "module",
+      "plugins": [
+        "@",
+        "@next/next",
+        "@typescript-eslint",
+        "import",
+        "jsx-a11y",
+        "react",
+        "react-hooks"
+      ],
+      "nextRootDirPresent": false
+    },
+    {
+      "id": 2,
+      "fingerprint": "f571b4577d130c756c29ad0d61fd73b8c4ec8f6793e8e961d164df8bc5b52fae",
+      "enabledNextRules": 22,
+      "enabledRules": 86,
+      "rules": {
+        "@next/next/google-font-display": [
+          1
+        ],
+        "@next/next/google-font-preconnect": [
+          1
+        ],
+        "@next/next/inline-script-id": [
+          2
+        ],
+        "@next/next/next-script-for-ga": [
+          1
+        ],
+        "@next/next/no-assign-module-variable": [
+          2
+        ],
+        "@next/next/no-async-client-component": [
+          1
+        ],
+        "@next/next/no-before-interactive-script-outside-document": [
+          1
+        ],
+        "@next/next/no-css-tags": [
+          1
+        ],
+        "@next/next/no-document-import-in-page": [
+          2
+        ],
+        "@next/next/no-duplicate-head": [
+          2
+        ],
+        "@next/next/no-head-element": [
+          1
+        ],
+        "@next/next/no-head-import-in-document": [
+          2
+        ],
+        "@next/next/no-html-link-for-pages": [
+          2
+        ],
+        "@next/next/no-img-element": [
+          1
+        ],
+        "@next/next/no-location-assign-relative-destination": [
+          1
+        ],
+        "@next/next/no-page-custom-font": [
+          1
+        ],
+        "@next/next/no-script-component-in-head": [
+          2
+        ],
+        "@next/next/no-styled-jsx-in-document": [
+          1
+        ],
+        "@next/next/no-sync-scripts": [
+          2
+        ],
+        "@next/next/no-title-in-document-head": [
+          1
+        ],
+        "@next/next/no-typos": [
+          1
+        ],
+        "@next/next/no-unwanted-polyfillio": [
+          1
+        ],
+        "@typescript-eslint/ban-ts-comment": [
+          2
+        ],
+        "@typescript-eslint/no-array-constructor": [
+          2
+        ],
+        "@typescript-eslint/no-duplicate-enum-values": [
+          2
+        ],
+        "@typescript-eslint/no-empty-object-type": [
+          2
+        ],
+        "@typescript-eslint/no-explicit-any": [
+          2
+        ],
+        "@typescript-eslint/no-extra-non-null-assertion": [
+          2
+        ],
+        "@typescript-eslint/no-misused-new": [
+          2
+        ],
+        "@typescript-eslint/no-namespace": [
+          2
+        ],
+        "@typescript-eslint/no-non-null-asserted-optional-chain": [
+          2
+        ],
+        "@typescript-eslint/no-require-imports": [
+          2
+        ],
+        "@typescript-eslint/no-this-alias": [
+          2
+        ],
+        "@typescript-eslint/no-unnecessary-type-constraint": [
+          2
+        ],
+        "@typescript-eslint/no-unsafe-declaration-merging": [
+          2
+        ],
+        "@typescript-eslint/no-unsafe-function-type": [
+          2
+        ],
+        "@typescript-eslint/no-unused-expressions": [
+          1,
+          {
+            "allowShortCircuit": false,
+            "allowTaggedTemplates": false,
+            "allowTernary": false
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          1
+        ],
+        "@typescript-eslint/no-wrapper-object-types": [
+          2
+        ],
+        "@typescript-eslint/prefer-as-const": [
+          2
+        ],
+        "@typescript-eslint/prefer-namespace-keyword": [
+          2
+        ],
+        "@typescript-eslint/triple-slash-reference": [
+          2
+        ],
+        "constructor-super": [
+          0
+        ],
+        "getter-return": [
+          0,
+          {
+            "allowImplicit": false
+          }
+        ],
+        "import/no-anonymous-default-export": [
+          1
+        ],
+        "jsx-a11y/alt-text": [
+          1,
+          {
+            "elements": [
+              "img"
+            ],
+            "img": [
+              "Image"
+            ]
+          }
+        ],
+        "jsx-a11y/aria-props": [
+          1
+        ],
+        "jsx-a11y/aria-proptypes": [
+          1
+        ],
+        "jsx-a11y/aria-unsupported-elements": [
+          1
+        ],
+        "jsx-a11y/role-has-required-aria-props": [
+          1
+        ],
+        "jsx-a11y/role-supports-aria-props": [
+          1
+        ],
+        "no-array-constructor": [
+          0
+        ],
+        "no-class-assign": [
+          0
+        ],
+        "no-const-assign": [
+          0
+        ],
+        "no-dupe-args": [
+          0
+        ],
+        "no-dupe-class-members": [
+          0
+        ],
+        "no-dupe-keys": [
+          0
+        ],
+        "no-func-assign": [
+          0
+        ],
+        "no-import-assign": [
+          0
+        ],
+        "no-new-native-nonconstructor": [
+          0
+        ],
+        "no-new-symbol": [
+          0
+        ],
+        "no-obj-calls": [
+          0
+        ],
+        "no-redeclare": [
+          0,
+          {
+            "builtinGlobals": true
+          }
+        ],
+        "no-setter-return": [
+          0
+        ],
+        "no-this-before-super": [
+          0
+        ],
+        "no-undef": [
+          0,
+          {
+            "typeof": false
+          }
+        ],
+        "no-unreachable": [
+          0
+        ],
+        "no-unsafe-negation": [
+          0,
+          {
+            "enforceForOrderingRelations": false
+          }
+        ],
+        "no-unused-expressions": [
+          0,
+          {
+            "allowShortCircuit": false,
+            "allowTernary": false,
+            "allowTaggedTemplates": false,
+            "enforceForJSX": false,
+            "ignoreDirectives": false
+          }
+        ],
+        "no-unused-vars": [
+          0
+        ],
+        "no-var": [
+          2
+        ],
+        "no-with": [
+          0
+        ],
+        "prefer-const": [
+          2,
+          {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+          }
+        ],
+        "prefer-rest-params": [
+          2
+        ],
+        "prefer-spread": [
+          2
+        ],
+        "react-hooks/config": [
+          2
+        ],
+        "react-hooks/error-boundaries": [
+          2
+        ],
+        "react-hooks/exhaustive-deps": [
+          1
+        ],
+        "react-hooks/gating": [
+          2
+        ],
+        "react-hooks/globals": [
+          2
+        ],
+        "react-hooks/immutability": [
+          2
+        ],
+        "react-hooks/incompatible-library": [
+          1
+        ],
+        "react-hooks/preserve-manual-memoization": [
+          2
+        ],
+        "react-hooks/purity": [
+          2
+        ],
+        "react-hooks/refs": [
+          2
+        ],
+        "react-hooks/rules-of-hooks": [
+          2
+        ],
+        "react-hooks/set-state-in-effect": [
+          2
+        ],
+        "react-hooks/set-state-in-render": [
+          2
+        ],
+        "react-hooks/static-components": [
+          2
+        ],
+        "react-hooks/unsupported-syntax": [
+          1
+        ],
+        "react-hooks/use-memo": [
+          2
+        ],
+        "react/display-name": [
+          2
+        ],
+        "react/jsx-key": [
+          2
+        ],
+        "react/jsx-no-comment-textnodes": [
+          2
+        ],
+        "react/jsx-no-duplicate-props": [
+          2
+        ],
+        "react/jsx-no-target-blank": [
+          0
+        ],
+        "react/jsx-no-undef": [
+          2
+        ],
+        "react/jsx-uses-react": [
+          2
+        ],
+        "react/jsx-uses-vars": [
+          2
+        ],
+        "react/no-children-prop": [
+          2
+        ],
+        "react/no-danger-with-children": [
+          2
+        ],
+        "react/no-deprecated": [
+          2
+        ],
+        "react/no-direct-mutation-state": [
+          2
+        ],
+        "react/no-find-dom-node": [
+          2
+        ],
+        "react/no-is-mounted": [
+          2
+        ],
+        "react/no-render-return-value": [
+          2
+        ],
+        "react/no-string-refs": [
+          2
+        ],
+        "react/no-unescaped-entities": [
+          2
+        ],
+        "react/no-unknown-property": [
+          0
+        ],
+        "react/no-unsafe": [
+          0
+        ],
+        "react/prop-types": [
+          0
+        ],
+        "react/react-in-jsx-scope": [
+          0
+        ],
+        "react/require-render-return": [
+          2
+        ]
+      },
+      "parser": {
+        "name": "typescript-eslint/parser",
+        "version": "8.67.0"
+      },
+      "ecmaVersion": 2026,
+      "sourceType": "module",
+      "plugins": [
+        "@",
+        "@next/next",
+        "@typescript-eslint",
+        "import",
+        "jsx-a11y",
+        "react",
+        "react-hooks"
+      ],
+      "nextRootDirPresent": false
+    }
+  ],
+  "totalFiles": 31,
+  "errors": 0,
+  "warnings": 0
+}

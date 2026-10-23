@@ -1,0 +1,12 @@
+Exit code: 0
+{
+  "reportSections": 9,
+  "gateLogs": 12,
+  "allGateExitCodes": 0,
+  "manifestOnlyApprovedOverride": true,
+  "retainedPackageVersionsAndIntegrityUnchanged": 390,
+  "tests": 41,
+  "auditFull": 0,
+  "auditProduction": 0,
+  "checkpoint": "FAILED"
+}

@@ -1,0 +1,115 @@
+{
+  "capturedAt": "2026-10-23T18:56:21+07:00",
+  "project": "Website Conqueror Studio",
+  "branch": "agent/upgrade-v1.1",
+  "baseCommit": "46554a03dbda44e507db76db0e310420e15fc8d6",
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "localRemediation": "PASS under CTO-approved default-root-only contract",
+  "engineeringClosure": "IN PROGRESS: Node22/Linux/remote CI and cross-session checkpoint not verified",
+  "lockSha256": "c571b4082fa18155fd93cab01ed106a135248a3bccd34ed9a21d8a02f95389d1",
+  "runtime": {
+    "node": "24.18.0",
+    "npm": "11.16.0",
+    "os": "Windows"
+  },
+  "gates": [
+    {
+      "evidence": "final/guard-main-install-final.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-main-tests-final.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-main-lint-final.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-main-typecheck-final.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-main-build-final.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-main-resolution-final.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-main-final-git-state.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-main-http-smoke.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-pilot-root-relative-ci-sequential.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-pilot-root-relative-ls-sequential.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-pilot-root-relative-install-sequential.txt",
+      "exitCode": 0
+    },
+    {
+      "evidence": "final/guard-pilot-root-relative-verify-final.txt",
+      "exitCode": 0
+    }
+  ],
+  "tests": {
+    "passed": 41,
+    "failed": 0,
+    "lintedFiles": 34,
+    "originalFilesRetained": 31,
+    "originalNextRulesRetained": 22
+  },
+  "sourceHashes": {
+    "trackedInBaseline": 83,
+    "unchanged": 79,
+    "expectedChanged": [
+      "package.json",
+      "package-lock.json",
+      "eslint.config.mjs",
+      "tests/toolchain-security.test.mjs"
+    ]
+  },
+  "auditFull": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "auditProduction": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "limits": [
+    "Remote Node22/Linux CI NOT RUN; no push authorization",
+    "Fresh mobile/emulated/real-device QA NOT RUN (available tab capabilities do not expose viewport emulation)",
+    "Basic desktop preview and HTTP smoke only, not full regression or contact delivery confirmation",
+    "Graph Transport closed; exact scoped source/lock/test fallback used",
+    "Official Multica interim and final saves failed HTTP429; no06/07 readback or issue attachment; LOCAL ONLY"
+  ],
+  "checkpoint": {
+    "attemptedAt": "2026-10-23T19:01:50+07:00",
+    "status": "FAILED",
+    "error": "HTTP429 UNAVAILABLE",
+    "readback06_07": "NOT VERIFIED",
+    "issueAttachment": "NOT VERIFIED",
+    "evidence": "multica-final-result.json"
+  }
+}

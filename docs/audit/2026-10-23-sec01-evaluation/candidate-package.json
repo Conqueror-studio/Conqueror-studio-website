@@ -1,0 +1,14 @@
+{
+  "name": "conqueror-sec01-alternative-evaluation",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@next/eslint-plugin-next": "16.3.1",
+    "tinyglobby": "0.2.17"
+  },
+  "overrides": {
+    "@next/eslint-plugin-next": {
+      "fast-glob": "npm:tinyglobby@0.2.17"
+    }
+  }
+}

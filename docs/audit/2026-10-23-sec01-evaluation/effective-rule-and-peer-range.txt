@@ -1,0 +1,12 @@
+Exit code: 0
+
+{
+  "newRule": [
+    1
+  ],
+  "enabledNextRules": 22
+}
+{
+  "eslint": "^7.23.0 || ^8.0.0",
+  "typescript": ">=3.3.1"
+}

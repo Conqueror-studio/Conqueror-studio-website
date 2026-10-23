@@ -1,0 +1,93 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { createRequire } from 'node:module';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import test from 'node:test';
+import { ESLint } from 'eslint';
+
+const root = fileURLToPath(new URL('../', import.meta.url));
+const require = createRequire(import.meta.url);
+// Resolve the dependency used by Next's actual lint config, including nested installs.
+const nextRequire = createRequire(require.resolve('eslint-config-next/core-web-vitals'));
+const rootHelperPath = nextRequire.resolve('@next/eslint-plugin-next/dist/utils/get-root-dirs.js');
+const pluginRequire = createRequire(rootHelperPath);
+const fastGlob = pluginRequire('fast-glob');
+const { getRootDirs } = nextRequire(rootHelperPath);
+
+// Test-process-only sentinel: never edit installed packages or feed a DoS payload.
+// An upstream API change must fail this contract and receive a fresh security review.
+function installGlobSentinel() {
+  const originals = ['globSync', 'sync'].map((name) => [name, Object.getOwnPropertyDescriptor(fastGlob, name)]);
+  for (const [name, descriptor] of originals) {
+    assert.equal(typeof descriptor?.value, 'function', 'Review changed fast-glob entry point: ' + name);
+    assert.equal(descriptor.writable, true, 'Guard requires a restorable function: ' + name);
+  }
+  const calls = [];
+  for (const [name, descriptor] of originals) {
+    Object.defineProperty(fastGlob, name, { ...descriptor, value: () => {
+      calls.push(name);
+      throw new Error('SEC-01 guard: optional Next rootDir glob expansion requires security review');
+    } });
+  }
+  return { calls, restore() {
+    for (const [name, descriptor] of originals) Object.defineProperty(fastGlob, name, descriptor);
+  } };
+}
+
+test('SEC-01 sentinel catches benign rootDir expansion and restores the original functions', () => {
+  const original = fastGlob.globSync;
+  const guard = installGlobSentinel();
+  try {
+    assert.deepEqual(getRootDirs({ cwd: root, settings: {} }), [root]);
+    assert.equal(guard.calls.length, 0);
+    assert.throws(() => getRootDirs({ cwd: root, settings: { next: { rootDir: 'src/*' } } }), /SEC-01 guard/);
+    assert.throws(() => getRootDirs({ cwd: root, settings: { next: { rootDir: ['src/*'] } } }), /SEC-01 guard/);
+    assert.throws(() => fastGlob.sync('src/*'), /SEC-01 guard/);
+    assert.equal(guard.calls.length, 3);
+  } finally { guard.restore(); }
+  assert.equal(fastGlob.globSync, original);
+});
+
+test('SEC-01 guard rejects an actual lint run with a benign optional rootDir override', { timeout: 60000 }, async () => {
+  const guard = installGlobSentinel();
+  try {
+    const lint = new ESLint({ cwd: root, overrideConfig: { settings: { next: { rootDir: 'src/*' } } } });
+    await assert.rejects(lint.lintFiles(['src/app/page.tsx']), /SEC-01 guard/);
+    assert.ok(guard.calls.length > 0);
+  } finally { guard.restore(); }
+});
+
+test('all actual linted files retain default roots and lint without entering the SEC-01 glob path', { timeout: 60000 }, async (t) => {
+  const guard = installGlobSentinel();
+  try {
+    const lint = new ESLint({ cwd: root });
+    const results = await lint.lintFiles(['.']);
+    const files = new Set(results.map((result) => path.relative(root, result.filePath).split(path.sep).join('/')));
+    for (const file of ['src/app/page.tsx', 'src/components/featured-work.tsx', 'tests/toolchain-security.test.mjs']) {
+      assert.ok(files.has(file), 'Guard must include ' + file);
+    }
+    for (const result of results) {
+      const config = await lint.calculateConfigForFile(result.filePath);
+      assert.equal(config.settings?.next?.rootDir, undefined, result.filePath + ': optional rootDir requires security review');
+      assert.equal(config.rules['@next/next/no-html-link-for-pages']?.[0], 2, result.filePath + ': keep Next lint rule active');
+      assert.equal(result.errorCount, 0, result.filePath + ': lint errors');
+      assert.equal(result.warningCount, 0, result.filePath + ': lint warnings');
+    }
+    assert.equal(guard.calls.length, 0, 'Review any new use of Next rootDir glob expansion');
+    t.diagnostic(`${results.length} effective configs checked; zero warnings/errors and zero guarded glob calls`);
+  } finally { guard.restore(); }
+});
+
+test('CI bounds quality and security jobs while keeping the full audit gate', async () => {
+  const workflow = await readFile(new URL('../.github/workflows/quality.yml', import.meta.url), 'utf8');
+  const lines = workflow.split(/\r?\n/);
+  const quality = lines.indexOf('  quality:');
+  const security = lines.indexOf('  security:');
+  assert.ok(quality >= 0 && security > quality);
+  assert.match(lines.slice(quality, security).join('\n'), /^    timeout-minutes: 15$/m);
+  assert.match(lines.slice(security).join('\n'), /^    timeout-minutes: 5$/m);
+  assert.ok(workflow.includes('npm audit --omit=dev --audit-level=high'));
+  assert.ok(workflow.includes('npm audit --audit-level=high'));
+  assert.doesNotMatch(workflow, /continue-on-error|npm audit fix/);
+});

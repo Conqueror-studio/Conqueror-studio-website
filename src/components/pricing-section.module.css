@@ -1,0 +1,73 @@
+.section { padding-block: clamp(3rem, 7vw, 8rem); scroll-margin-top: 6rem; }
+.header { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: clamp(2rem, 4vw, 4rem); }
+.eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 1.25rem; }
+.header h2 { font-size: clamp(44px, 5.6vw, 88px); line-height: 1.02; letter-spacing: -.055em; }
+.intro { max-width: 24rem; font-size: 14px; line-height: 1.65; color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.card { min-width: 0; display: flex; flex-direction: column; padding: clamp(1.5rem, 2.4vw, 2.75rem); border-radius: 24px; background: #eaeae3; color: var(--ink); }
+.featured { background: var(--electric-blue); color: #fff; }
+.badge { display: inline-flex; align-self: flex-start; border: 1px solid currentColor; padding: .45rem .7rem; border-radius: 99px; font-size: 10px; line-height: 1.2; letter-spacing: .025em; margin-bottom: 1.6rem; }
+.card h3 { font-size: clamp(20px, 1.8vw, 28px); line-height: 1.15; letter-spacing: -.035em; }
+.description { min-height: 4.5em; margin-top: .9rem; font-size: 14px; line-height: 1.5; }
+.priceBlock { margin-top: 2rem; min-height: 8.5rem; }
+.priceLabel { font-size: 11px; margin-bottom: .6rem; }
+.price { font-size: clamp(34px, 3.45vw, 58px); line-height: 1; letter-spacing: -.065em; }
+.price > span { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .4rem; row-gap: .35rem; }
+.price small { font-size: 15px; letter-spacing: -.015em; }
+.customPrice { font-size: clamp(30px, 3.05vw, 49px); line-height: 1.1; letter-spacing: -.055em; }
+.paymentNote { margin-top: .8rem; font-size: 11px; line-height: 1.5; }
+.details, .customServices { border-top: 1px solid rgba(17, 17, 17, .18); padding-block: 1.5rem 2rem; }
+.featured .details { border-color: rgba(255, 255, 255, .35); }
+.details { display: flex; flex-direction: column; gap: .9rem; }
+.details li { display: flex; align-items: baseline; gap: .7rem; font-size: 13px; line-height: 1.5; }
+.details li > span { flex-shrink: 0; font-size: 12px; }
+.details a { text-decoration: underline; text-decoration-color: currentColor; text-underline-offset: 3px; }
+.customServices { display: grid; gap: 1rem; }
+.customServices h4 { margin: 0 0 .4rem; font-size: 14px; font-weight: 500; letter-spacing: -.02em; }
+.customServices p { font-size: 12px; line-height: 1.6; color: #41413c; }
+.cta { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: auto; padding: .9rem 1.1rem; min-height: 48px; border: 1px solid var(--ink); border-radius: 99px; font-size: 13px; transition: background 180ms ease, color 180ms ease; }
+.cta:hover { background: var(--ink); color: #fff; }
+.featured .cta { background: #fff; color: var(--ink); border-color: #fff; }
+.featured .cta:hover { background: #e8ecff; border-color: #e8ecff; }
+.scopeNote { margin-top: 1.25rem; font-size: 12px; line-height: 1.65; color: var(--muted); }
+.extras { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 5vw, 6rem); margin-top: clamp(3.5rem, 7vw, 7rem); padding-top: 2rem; border-top: 1px solid var(--line); scroll-margin-top: 6rem; }
+.extrasIntro h3 { font-size: clamp(32px, 3vw, 48px); letter-spacing: -.045em; line-height: 1.05; }
+.extrasIntro > p:not(.eyebrow) { max-width: 22rem; margin-top: 1rem; font-size: 14px; line-height: 1.65; color: var(--muted); }
+.extrasLink { display: inline-flex; align-items: center; gap: 1rem; margin-top: 1rem; min-height: 44px; font-size: 13px; text-decoration: underline; text-underline-offset: 4px; }
+.table { width: 100%; align-self: start; border-collapse: collapse; font-size: 13px; line-height: 1.5; }
+.table th, .table td { padding: 1rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.table th { text-align: left; font-weight: 500; }
+.table th:first-child { padding-right: 1.25rem; }
+.table thead th { padding-top: 0; font-size: 11px; color: var(--muted); }
+.table thead th:last-child, .table td { text-align: right; }
+.table tbody tr:last-child th, .table tbody tr:last-child td { border-bottom: 0; }
+.extension { display: inline-block; padding: .05rem .3rem; border-radius: 4px; background: #e5e5df; font-family: monospace; font-size: .95em; }
+.extraAmount { white-space: nowrap; }
+.extraPeriod { display: inline-block; margin-left: .2em; font-size: 11px; color: var(--muted); }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 1000px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card:last-child { grid-column: 1 / -1; }
+  .customServices { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .price { font-size: clamp(36px, 5vw, 52px); }
+  .extras { grid-template-columns: 1fr; gap: 2rem; }
+}
+@media (max-width: 600px) {
+  .header { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+  .header h2 { font-size: clamp(40px, 10.4vw, 62px); }
+  .intro { font-size: 13px; }
+  .intro br { display: none; }
+  .grid { grid-template-columns: 1fr; gap: 1rem; }
+  .card { padding: 1.6rem; border-radius: 20px; }
+  .card h3 { font-size: 24px; }
+  .description { min-height: 0; }
+  .badge { margin-bottom: 1.25rem; }
+  .priceBlock { margin-top: 1.75rem; min-height: 0; margin-bottom: 1.75rem; }
+  .price { font-size: clamp(38px, 11vw, 58px); }
+  .customPrice { font-size: 40px; }
+  .customServices { grid-template-columns: 1fr; gap: 1.1rem; }
+  .extras { padding-top: 1.5rem; }
+  .table { font-size: 12px; }
+  .table th:first-child { width: 48%; padding-right: .75rem; }
+  .extraAmount, .extraPeriod { display: block; }
+}

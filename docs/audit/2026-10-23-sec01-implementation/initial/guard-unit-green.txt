@@ -1,0 +1,14 @@
+Evidence key: guard-unit-green
+Exit code: 0
+✔ both glob entry points reject benign inputs without processing them (3.9133ms)
+✔ default root policy leaves supported settings untouched (4.1715ms)
+✔ policy rejects every explicit root including empty and undefined values (0.7005ms)
+✔ policy rejects inherited roots and malformed settings (0.2976ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 137.4596

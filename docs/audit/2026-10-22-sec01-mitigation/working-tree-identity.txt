@@ -1,0 +1,71 @@
+Exit code: 0
+
+ M .env.example
+ M .github/workflows/quality.yml
+ M .gitignore
+ M next.config.mjs
+ M package-lock.json
+ M package.json
+ M src/app/globals.css
+ M src/app/layout.tsx
+ M src/app/page.tsx
+ M src/app/robots.ts
+ M src/app/sitemap.ts
+ M src/lib/content.ts
+ M tests/smoke.test.mjs
+ M tsconfig.json
+?? docs/BROWSER_QA_HANDOFF_2026-10-22.md
+?? docs/DEPENDENCY_SECURITY_REPORT_2026-10-18.md
+?? docs/FAQ_GENERAL_HANDOFF_2026-10-22.md
+?? docs/FOOTER_PUZZLE_HANDOFF_2026-10-22.md
+?? docs/HERO_MEDIA_HANDOFF_2026-10-22.md
+?? docs/MOTION_FAQ_HANDOFF_2026-10-22.md
+?? docs/PRE_PUSH_SECURITY_QA_AUDIT_2026-10-22.md
+?? docs/PRICING_HANDOFF_2026-10-22.md
+?? docs/PRICING_REVISION_CHECKPOINT_2026-10-22.md
+?? docs/RELEASE_GATE_HARDENING_HANDOFF_2026-10-22.md
+?? docs/SEC01_RISK_REVIEW_2026-10-22.md
+?? docs/audit/
+?? docs/basmara-zoom-2026-10-19.png
+?? docs/design/
+?? docs/faq-desktop-2026-10-22.png
+?? docs/faq-six-desktop-2026-10-22.png
+?? docs/featured-work-desktop-2026-10-19.png
+?? docs/featured-work-mobile-2026-10-19.png
+?? docs/footer-puzzle-desktop-2026-10-22.png
+?? docs/footer-puzzle-mobile-2026-10-22.png
+?? docs/footer-puzzle-solved-desktop-2026-10-22.png
+?? docs/header-hidden-2026-10-18.png
+?? docs/hero-no-pause-2026-10-22.png
+?? docs/hero-video-desktop-2026-10-22.png
+?? docs/hero-video-mobile-2026-10-22.png
+?? docs/marquee-photo-logo-desktop-2026-10-22.png
+?? docs/milestones/
+?? docs/pricing-desktop-2026-10-22.png
+?? docs/pricing-extras-desktop-2026-10-22.png
+?? docs/pricing-extras-mobile-2026-10-22.png
+?? docs/pricing-mobile-2026-10-22.png
+?? docs/pricing-start-from-desktop-2026-10-22.png
+?? docs/superpowers/
+?? public/brand/conqueror-studio.svg
+?? public/figma/
+?? public/fonts/
+?? public/hero/
+?? public/portfolio/
+?? public/team/
+?? public/temporary/
+?? src/app/motion.css
+?? src/components/
+?? src/lib/initial-anchor.mjs
+?? src/lib/logo-puzzle.mjs
+?? src/lib/motion-math.mjs
+?? src/lib/site-config.mjs
+?? tests/initial-anchor.test.mjs
+?? tests/logo-puzzle.test.mjs
+?? tests/logo.test.mjs
+?? tests/motion.test.mjs
+?? tests/release-hardening.test.mjs
+?? tests/toolchain-security.test.mjs
+agent/upgrade-v1.1
+46554a03dbda44e507db76db0e310420e15fc8d6
+2026-10-22 23:55:19

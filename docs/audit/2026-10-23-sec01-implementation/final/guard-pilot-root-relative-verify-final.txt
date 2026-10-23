@@ -1,0 +1,68 @@
+Evidence key: guard-pilot-root-relative-verify-final
+Exit code: 0
+conqueror-studio-website@0.1.0 C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707
+└─┬ eslint-config-next@16.3.1
+  └─┬ @next/eslint-plugin-next@16.3.1 overridden
+    └── fast-glob@npm:@conqueror/next-root-guard@0.1.0 -> .\tooling\next-root-guard
+
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          C571B4082FA18155FD93CAB01ED106A135248A3BCCD34ED9A21D8A02F95389D1       C:\Users\HP\AppData\Local\Temp\…
+
+> conqueror-studio-website@0.1.0 test
+> node --test
+
+✔ initial anchor waits for stable enhanced layout, scrolls once, then removes all handlers (8.8069ms)
+✔ empty, missing, malformed fragments and back-forward restoration do not override native scroll (1.6288ms)
+✔ user input, changed hash and unmount cancel pending initial alignment (5.354ms)
+✔ late fonts and unstable layout cannot schedule a delayed scroll after the deadline or cleanup (1.1841ms)
+✔ a shuffled logo contains each original piece exactly once and is not already solved (8.1929ms)
+✔ identity shuffle still produces a playable board (0.4201ms)
+✔ swapping is immutable, reversible, and rejects invalid slot indices (1.8765ms)
+✔ brand SVG retains its natural ratio and contains no background or external content (12.397ms)
+✔ rendered logo has transparent letter counters and a flower cutout within the white badge (62.1051ms)
+✔ header and footer use the same proportionate SVG with responsive image sizing (13.9662ms)
+✔ scroll stages clamp safely before, within and after the pinned area (4.6834ms)
+✔ CEO hero media, video posters and team references are available locally (16.8308ms)
+✔ hero selects once per visit and shares its poster between background and cameo (8.621ms)
+✔ hero and studio running text omit manual pause controls while retaining motion safeguards (6.9184ms)
+✔ scroll enhancements have cleanup, motion preference and manual alternatives (23.9696ms)
+✔ team retains scroll-driven cards without numbered navigation (3.7082ms)
+✔ featured work uses mobile scroll motion, clickable names, and no bottom controls (9.5698ms)
+✔ featured projects link to their live sites using local hero assets (6.6057ms)
+✔ both glob entry points reject benign inputs without processing them (3.9513ms)
+✔ default root policy leaves supported settings untouched (1.1402ms)
+✔ policy rejects every explicit root including empty and undefined values (0.556ms)
+✔ policy rejects inherited roots and malformed settings (0.4629ms)
+✔ original lint families still detect real violations and accept a valid component (8091.8172ms)
+Pages directory cannot be found at . If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+✔ actual ESLint registers root policy at error severity and rejects empty override (172.927ms)
+✔ explicit release origin is HTTPS and Vercel demo/local are never indexable by default (3.9246ms)
+✔ invalid release or hosted URL configuration fails closed instead of publishing localhost (2.7538ms)
+✔ production headers harden framing, MIME, referrers and unused capabilities without development CSP breakage (2.2144ms)
+✔ inactive enhanced portfolio panels are inert; initial anchor coordinator is mounted without visible UI (21.519ms)
+✔ CI explicitly runs lockfile quality and security gates without exceptions or deployment (6.4476ms)
+✔ homepage retains every navigation destination (24.2887ms)
+✔ FAQ scopes the nine exclusions to basic website pricing after Pricing and before the closing (6.6103ms)
+✔ FAQ adds the five approved general questions without replacing the existing scope answer (3.7469ms)
+✔ commercial contact actions and the three services remain available (11.86ms)
+✔ Figma artwork and fonts are durable, non-empty local assets (33.1902ms)
+✔ interactive controls expose keyboard and reduced-motion support (3.3367ms)
+✔ production builds cannot overwrite the running preview cache (0.7577ms)
+✔ manifest pins exact OS dependency versions (3.1271ms)
+✔ SEC-01 installed leaf is the private guard and default roots retain cwd (8.058ms)
+Pages directory cannot be found at . If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+✔ SEC-01 actual lint rejects custom roots instead of skipping Next rules (8013.2612ms)
+✔ all actual files keep every original rule and metadata plus the root policy (3618.8649ms)
+ℹ 34 files linted; all 31 original files/rules retained; no warnings/errors
+✔ CI keeps time limits and both raw audit gates (6.7501ms)
+ℹ tests 41
+ℹ suites 0
+ℹ pass 41
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12910.3772
+

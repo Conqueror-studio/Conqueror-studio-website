@@ -1,0 +1,14 @@
+Exit code: 0
+
+"3.0.3"
+{
+  "version": "16.4.2",
+  "dependencies": {
+    "fast-glob": "3.3.1",
+    "@eslint-community/eslint-utils": "4.9.1"
+  }
+}
+{
+  "eslint": "^7.23.0 || ^8.0.0",
+  "typescript": ">=3.3.1"
+}

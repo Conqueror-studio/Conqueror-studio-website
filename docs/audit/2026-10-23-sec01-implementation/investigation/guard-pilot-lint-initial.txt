@@ -1,0 +1,14 @@
+Historical investigation; not a final gate.
+Evidence key: guard-pilot-lint-initial
+Exit code: INCOMPLETE CAPTURE
+
+> conqueror-studio-website@0.1.0 lint
+> eslint . --max-warnings=0
+
+
+C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\tooling\next-root-guard\policy.mjs
+  19:1  warning  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+✖ 1 problem (0 errors, 1 warning)
+
+ESLint found too many warnings (maximum: 0).

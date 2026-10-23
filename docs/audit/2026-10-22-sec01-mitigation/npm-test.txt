@@ -1,0 +1,50 @@
+Exit code: 0
+
+
+> conqueror-studio-website@0.1.0 test
+> node --test
+
+✔ initial anchor waits for stable enhanced layout, scrolls once, then removes all handlers (8.3043ms)
+✔ empty, missing, malformed fragments and back-forward restoration do not override native scroll (1.5827ms)
+✔ user input, changed hash and unmount cancel pending initial alignment (6.3513ms)
+✔ late fonts and unstable layout cannot schedule a delayed scroll after the deadline or cleanup (9.2807ms)
+✔ a shuffled logo contains each original piece exactly once and is not already solved (12.4163ms)
+✔ identity shuffle still produces a playable board (0.9921ms)
+✔ swapping is immutable, reversible, and rejects invalid slot indices (1.139ms)
+✔ brand SVG retains its natural ratio and contains no background or external content (25.5114ms)
+✔ rendered logo has transparent letter counters and a flower cutout within the white badge (80.2116ms)
+✔ header and footer use the same proportionate SVG with responsive image sizing (10.1246ms)
+✔ scroll stages clamp safely before, within and after the pinned area (6.2717ms)
+✔ CEO hero media, video posters and team references are available locally (50.3793ms)
+✔ hero selects once per visit and shares its poster between background and cameo (10.4753ms)
+✔ hero and studio running text omit manual pause controls while retaining motion safeguards (28.6184ms)
+✔ scroll enhancements have cleanup, motion preference and manual alternatives (25.3003ms)
+✔ team retains scroll-driven cards without numbered navigation (5.304ms)
+✔ featured work uses mobile scroll motion, clickable names, and no bottom controls (28.0013ms)
+✔ featured projects link to their live sites using local hero assets (9.4866ms)
+✔ explicit release origin is HTTPS and Vercel demo/local are never indexable by default (10.2825ms)
+✔ invalid release or hosted URL configuration fails closed instead of publishing localhost (3.4226ms)
+✔ production headers harden framing, MIME, referrers and unused capabilities without development CSP breakage (3.046ms)
+✔ inactive enhanced portfolio panels are inert; initial anchor coordinator is mounted without visible UI (36.2585ms)
+✔ CI explicitly runs lockfile quality and security gates without exceptions or deployment (6.4755ms)
+✔ homepage retains every navigation destination (43.9022ms)
+✔ FAQ scopes the nine exclusions to basic website pricing after Pricing and before the closing (7.7751ms)
+✔ FAQ adds the five approved general questions without replacing the existing scope answer (5.2409ms)
+✔ commercial contact actions and the three services remain available (12.5487ms)
+✔ Figma artwork and fonts are durable, non-empty local assets (41.0584ms)
+✔ interactive controls expose keyboard and reduced-motion support (9.1536ms)
+✔ production builds cannot overwrite the running preview cache (1.8729ms)
+✔ manifest pins exact OS dependency versions (6.3382ms)
+✔ SEC-01 sentinel catches benign rootDir expansion and restores the original functions (3.5884ms)
+✔ SEC-01 guard rejects an actual lint run with a benign optional rootDir override (7188.5858ms)
+✔ all actual linted files retain default roots and lint without entering the SEC-01 glob path (2607.1057ms)
+ℹ 31 effective configs checked; zero warnings/errors and zero guarded glob calls
+✔ CI bounds quality and security jobs while keeping the full audit gate (3.9351ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11674.749

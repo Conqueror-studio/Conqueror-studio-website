@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="tailwindcss-icon 1">
+<path id="Vector" d="M4 6C4.53325 4.00008 5.86675 3 8 3C11.2 3 11.6 5.25 13.2 5.625C14.2668 5.87508 15.2 5.50008 16 4.5C15.4668 6.49992 14.1333 7.5 12 7.5C8.8 7.5 8.4 5.25 6.8 4.875C5.73325 4.62492 4.8 4.99992 4 6ZM0 10.5C0.53325 8.50008 1.86675 7.5 4 7.5C7.2 7.5 7.6 9.75 9.2 10.125C10.2668 10.3751 11.2 10.0001 12 9C11.4668 10.9999 10.1333 12 8 12C4.8 12 4.4 9.75 2.8 9.375C1.73325 9.12492 0.8 9.49992 0 10.5Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint0_linear_0_38)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_38" x1="3.97593e-07" y1="-4.99992" x2="14.5282" y2="20.8278" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2383AE"/>
+<stop offset="1" stop-color="#6DD7B9"/>
+</linearGradient>
+</defs>
+</svg>

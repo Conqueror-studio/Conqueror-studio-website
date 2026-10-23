@@ -1,0 +1,7 @@
+Evidence key: guard-main-git-check
+Exit code: 0
+warning: in the working copy of 'src/app/globals.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+46554a03dbda44e507db76db0e310420e15fc8d6
+2026-10-23T18:51:48.3694377+07:00

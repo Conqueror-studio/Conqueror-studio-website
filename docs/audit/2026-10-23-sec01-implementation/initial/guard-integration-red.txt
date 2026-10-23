@@ -1,0 +1,34 @@
+Evidence key: guard-integration-red
+Exit code: 1
+✔ both glob entry points reject benign inputs without processing them (7.2845ms)
+✔ default root policy leaves supported settings untouched (0.8751ms)
+✔ policy rejects every explicit root including empty and undefined values (0.5529ms)
+✔ policy rejects inherited roots and malformed settings (0.3498ms)
+✖ actual ESLint registers root policy at error severity and rejects empty override (4903.6237ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5840.0237
+
+✖ failing tests:
+
+test at tests\next-root-guard.test.mjs:33:1
+✖ actual ESLint registers root policy at error severity and rejects empty override (4903.6237ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  undefined !== 2
+  
+      at TestContext.<anonymous> (file:///C:/Users/HP/AppData/Local/Temp/conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707/tests/next-root-guard.test.mjs:36:10)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,41 @@
+Evidence key: guard-main-resolution
+Exit code: 1
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          C571B4082FA18155FD93CAB01ED106A135248A3BCCD34ED9A21D8A02F95389D1       D:\File Syahdan\Area 666 Conque…
+{
+  "node": "v24.18.0",
+  "plugin": "16.3.1",
+  "path": "D:\\File Syahdan\\Area 666 Conqueror Studio\\Web Conqueror\\website-repo\\tooling\\next-root-guard\\index.cjs",
+  "pkg": {
+    "name": "@conqueror/next-root-guard",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Project-specific default-root-only guard; not a general glob implementation",
+    "main": "index.cjs",
+    "files": [
+      "index.cjs",
+      "policy.mjs",
+      "README.md"
+    ]
+  }
+}
+conqueror-studio-website@0.1.0 D:\File Syahdan\Area 666 Conqueror Studio\Web Conqueror\website-repo
+├─┬ eslint-config-next@16.3.1
+│ └─┬ @next/eslint-plugin-next@16.3.1 overridden
+│   └── fast-glob@npm:@conqueror/next-root-guard@0.1.0 invalid: "file:../../../tooling/next-root-guard" from node_modules/@next/eslint-plugin-next -> .\tooling\next-root-guard
+├─┬ next@15.5.28
+│ ├── postcss@8.5.23 overridden
+│ ├── react-dom@19.1.2 deduped
+│ ├── react@19.1.2 deduped
+│ └─┬ styled-jsx@5.1.6
+│   └── react@19.1.2 deduped
+├─┬ react-dom@19.1.2
+│ └── react@19.1.2 deduped
+└── react@19.1.2
+
+npm error code ELSPROBLEMS
+npm error invalid: fast-glob@npm:@conqueror/next-root-guard@0.1.0 D:\File Syahdan\Area 666 Conqueror Studio\Web Conqueror\website-repo\node_modules\fast-glob
+npm error A complete log of this run can be found in: C:\Users\HP\AppData\Local\npm-cache\_logs\2026-10-23T11_48_00_970Z-debug-0.log
+

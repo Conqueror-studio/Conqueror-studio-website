@@ -1,0 +1,18 @@
+Evidence key: guard-pilot-root-relative-ci
+Exit code: 0
+npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat 'C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\node_modules\next\dist\compiled\@babel'
+npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat 'C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\node_modules\next\dist'
+npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat 'C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\node_modules\next\dist'
+npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat 'C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\node_modules\next\dist'
+npm warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, lstat 'C:\Users\HP\AppData\Local\Temp\conqueror-sec01-pilot-0d727cecffd54ee19d30b8e58f771707\node_modules\next\dist'
+
+added 331 packages, and audited 333 packages in 2m
+
+138 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm warn allow-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn allow-scripts   unrs-resolver@1.12.2 (postinstall: node postinstall.js)
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
