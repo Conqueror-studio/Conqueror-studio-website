@@ -12,7 +12,18 @@ function publicOrigin(value, key) {
 /** Explicit release URL opts into indexing; automatic Vercel/local previews never do. */
 export function getSiteConfig(env = process.env) {
   const release = env.NEXT_PUBLIC_SITE_URL?.trim();
-  if (release) return { url: publicOrigin(release, 'NEXT_PUBLIC_SITE_URL'), indexable: true };
+  const releaseUrl = release ? publicOrigin(release, 'NEXT_PUBLIC_SITE_URL') : undefined;
+  const environment = env.VERCEL_ENV?.trim();
+  // A copied release variable must never make a Preview/Development build indexable.
+  if (releaseUrl && (!environment || environment === 'production')) return { url: releaseUrl, indexable: true };
+  const productionDomain = env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
+  if (environment === 'production' && productionDomain) {
+    // Immutable deployment URLs can require Vercel login; OG assets need a public origin.
+    return { url: publicOrigin(`https://${productionDomain}`, 'VERCEL_PROJECT_PRODUCTION_URL'), indexable: false };
+  }
+  if (env.VERCEL === '1' && environment === 'production') {
+    throw new Error('VERCEL_PROJECT_PRODUCTION_URL is required for public demo sharing without NEXT_PUBLIC_SITE_URL.');
+  }
   const demo = env.VERCEL_URL?.trim();
   if (demo) return { url: publicOrigin(`https://${demo}`, 'VERCEL_URL'), indexable: false };
   if (env.VERCEL === '1') throw new Error('VERCEL_URL is required for a hosted demo without NEXT_PUBLIC_SITE_URL.');

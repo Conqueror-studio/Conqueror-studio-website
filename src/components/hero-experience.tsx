@@ -144,7 +144,7 @@ export default function HeroExperience({ contactUrl }: { contactUrl: string }) {
           <div className="hero-content">
             <div className="hero-eyebrow">
               <Image src="/figma/laurel-left.svg" alt="" width={25} height={34} />
-              <p># Creative agency<br />Based in Sukabumi, Indonesia</p>
+              <p>Creative agency<br />Based in Sukabumi, Indonesia</p>
               <Image src="/figma/laurel-right.svg" alt="" width={25} height={34} />
             </div>
             <h1 id="hero-heading">

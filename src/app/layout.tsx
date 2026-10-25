@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     description: 'Timeless digital experiences and intelligent systems for modern brands.',
     type: 'website',
   },
+  twitter: { card: 'summary_large_image' },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
